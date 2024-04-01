@@ -30,8 +30,14 @@
     scroll-behavior: smooth;
   }
 
-
-
+  
+ /* 460px / 16px = 28.75em */
+ @media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+  
+}
   
   /* 1200px / 16px = 75em */
   @media (max-width: 75em) {
@@ -46,21 +52,6 @@
       font-size: 58%;
     }
   }
-  
-  /* 460px / 16px = 28.75em */
-  @media (max-width: 28.75em) {
-    html {
-      font-size: 55%;
-    }
-  }
-
-
-
-
-
-
-
-
   
   
   /* Base styles */
@@ -118,7 +109,7 @@
   
   .nav-list {
     display: flex;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
   
   @media (max-width: 28.75em) {
@@ -171,7 +162,6 @@
     font-style: italic;
     color: var(--main-red);
     font-weight: bold;
-    
   }
   
   /* Projects section */
@@ -341,3 +331,53 @@
     }
   }
 
+.download{
+  color:#45567D;
+  text-decoration: none;
+}
+
+.cv{
+  margin-left: 70px;
+  margin-top: 0px;
+  text-align: center;
+  background: var(--main-gray);
+  border-radius:11px;
+  font-size:small;
+  padding: 9px;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+.cv:hover{
+  background-color:#45567D;
+  color: #fff;
+  border: 1px solid white;
+}
+
+.cv:hover .download {
+  color: #fff; 
+}
+
+
+.certification-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background:#1F212E ;
+}
+
+.certification-section-header{
+  color: beige;
+  max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid beige;
+}
+
+
+@media (max-width: 459px) {
+  html {
+    font-size:35%;
+  }
+  .cv{
+    margin-left:10px;
+  }
+}
