@@ -381,3 +381,18 @@
     margin-left:10px;
   }
 }
+
+.oculto{
+  display: none;
+}
+
+.show-inline {
+  display: flex;
+  flex-wrap: nowrap; /* Evita que los elementos se envuelvan */
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.project {
+  flex: 0 0 auto; /* Evita que los elementos se estiren para ocupar todo el espacio disponible */
+  margin: 0 10px; /* Ajusta el margen entre los elementos según sea necesario */
+}
