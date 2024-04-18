@@ -31,6 +31,29 @@
   }
 
   
+@keyframes aparecerDesdeIzquierda {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.profile {
+  animation: aparecerDesdeIzquierda 0.5s ease forwards;
+}
+
+
+.profile {
+  position: relative; 
+}
+
+
+
  /* 460px / 16px = 28.75em */
  @media (max-width: 28.75em) {
   html {
@@ -143,6 +166,11 @@
     height: 100vh;
     font-weight: 800;
     font-size: xx-large;
+    /*background-image: url(fondo.jpg);
+    background-repeat: no-repeat;
+	  background-size: cover;
+	  background-attachment:fixed; 
+	  background-position:center ;*/
     background-color: #111;
     background-image: linear-gradient(62deg, #e9eceffd 0%, #c0bec3 100%);
     /*position desconfigura en este caso*/
@@ -170,12 +198,14 @@
     text-align: center;
     padding: 10rem 2rem;
     background: var(--main-blue);
+    
   }
   
   .projects-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid var(--main-white);
+    
   }
   
   @media (max-width: 28.75em) {
@@ -193,7 +223,44 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
+  
+  }
+
+  .bolitas{
+    display: flex;
+    flex-direction: row;
+  }
+  .bolita{
+    border-radius: 50%;
+    background-color: #FF8096;
+    width: 1rem; /* 10px / 10 = 1rem */
+    height: 1rem; /* 10px / 10 = 1rem */
+    margin-bottom: 0.8rem; /* 5px / 10 = 0.5rem */
+  }
+  .bolita2{
+    display: inline;
+    border-radius: 50%;
+    background-color: #FF9C7E;
+    width: 1rem;
+    height: 1rem;
+    margin-left:0.5rem;
+  }
+  .bolita3{
+    display: inline;
+    border-radius: 50%;
+    background-color: #FFBA7F;
+    width:1rem;
+    height:1rem;
+    margin-left:0.5rem;
+  }
+  .bolita4{
+    display: inline;
+    border-radius: 50%;
+    background-color: rgb(66, 213, 182);
+    width:1rem;
+    height:1rem;
+    margin-left:0.5rem;
   }
   
   @media (max-width: 30.625em) {
@@ -229,7 +296,8 @@
   
   .project-title {
     font-size: 2rem;
-    padding: 2rem 0.5rem;
+    padding: 1.5rem 0.3rem;
+    border-radius: 10px;
   }
   
   .btn {
