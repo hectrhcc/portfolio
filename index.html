@@ -16,11 +16,15 @@
       href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
       rel="stylesheet"
     />
+    <!-- los tag script deben estar cerrados-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/3.0.1/typeit.min.js"></script>
     <title>Héctor Contreras</title>
   </head>
   <body>
     <!-- INICIO NAV -->
     <nav id="navbar" class="nav">
+      <div class="prenav">HC</div>
       <ul class="nav-list">
         <li>
           <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
@@ -41,8 +45,11 @@
     <!-- INICIO SECCION BIENVENIDA-->
     <section id="inicio" class="welcome-section">
       <img src="hhcc.png" alt="foto-perfil" class="profile">
-      <div>Hola, Soy Héctor<br/><span class="dev">desarrollador web</span><br/><span class="cv"><i class="fas fa-graduation-cap"></i> <a href="cv.pdf" download class="download">Descargar CV</a></span></div>
-      
+      <span><span class="saludo">Hola, Soy Héctor<br/>
+      <span class="dev">desarrollador web</span></span><br/>
+      <span class="cv"  style="display:none;"><i class="fas fa-graduation-cap"></i> 
+        <a href="cv.pdf" download class="download">Descargar CV</a></span>
+      </span>
     </section>
 
     <!-- FIN SECCION BIENVENIDA-->
@@ -402,6 +409,10 @@ class="project project-tile"
     </footer>
 
     <!-- FIN SECCIÓN FOOTER  -->
+    
+  <script src="js.js"></script>
   
   </body>
+  
 </html>
+
