@@ -47,9 +47,7 @@
   html {
     font-size: 55%;
   }
-  .welcome-section{
-    background-color: #000;
-  }
+ 
   
 }  
   /* 1200px / 16px = 75em */
@@ -57,18 +55,14 @@
     html {
       font-size: 60%;
     }
-    .welcome-section{
-      background-color: #ff7f50;
-    }
+   
   }  
   /* 980px / 16px = 61.25em */
   @media (max-width: 61.25em) {
     html {
       font-size: 58%;
     }
-    .welcome-section{
-      background-color: #ff7f50;
-    }
+    
 
   }
    
@@ -430,6 +424,7 @@
     justify-content: center;
     align-items:center;
     width:50%;
+    right:4rem;
   }
  
 }
@@ -529,4 +524,40 @@ transform: translateX(0);
   .welcome-section{
     flex-direction: row;
   }
+}
+
+@media only screen 
+  and (min-device-width: 812px) 
+  and (max-device-width: 896px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  .welcome-section {
+    max-width: 100%;
+  }
+
+}
+
+@media only screen
+  and (min-device-width: 667px) 
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  .welcome-section {
+    max-width: 100%;
+  }
+
+}
+
+@media only screen
+  and (device-width: 684px)
+  and (device-height: 366px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  .welcome-section {
+    max-width: 100%; 
+  }
+
 }
