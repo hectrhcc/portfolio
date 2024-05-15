@@ -435,21 +435,46 @@
   margin: 0 10px; /* Ajusta el margen entre los elementos según sea necesario */
 }
 
-
-#jobs-move, 
-#certs-move {
-  animation-play-state: paused; 
-}
-
 .animate {
   animation-play-state: running;
 }
 
-#jobs-move {
-  animation: job-move 3s;
+
+@keyframes titulo1 {
+  from {
+  transform: translateX(-100%);
+  }
+  to {
+  transform: translateX(0);
+  }
+  }
+
+  @keyframes titulo2 {
+    from {
+    transform: translateX(100%);
+    }
+    to {
+    transform: translateX(0);
+    }
+    }
+
+.projects-section-header{
+  view-timeline-name: --title;
+  animation-timeline: --title;
+	animation-name: titulo1;
+	animation-range: entry 0% cover 30%;
+	animation-fill-mode: both;
+  animation-direction:forwards;
 }
-  
-@keyframes job-move {
+.certification-section-header{
+  view-timeline-name: --title;
+  animation-timeline: --title;
+	animation-name: titulo2;
+	animation-range: entry 0% cover 30%;
+	animation-fill-mode: both;
+  animation-direction:forwards;
+}
+@keyframes jobs-move {
 from {
 transform: translateX(100%);
 }
@@ -457,10 +482,16 @@ to {
 transform: translateX(0);
 }
 }
-  
-#certs-move{
-animation: certs-move 3s;
+
+#jobs-move {
+  view-timeline-name: --job;
+  animation-timeline: --job;
+	animation-name: jobs-move;
+	animation-range: entry 0% cover 30%;
+	animation-fill-mode: both;
+  animation-direction:forwards;
 }
+
   
 @keyframes certs-move {
 from {
@@ -469,4 +500,13 @@ transform: translateX(-100%);
 to {
 transform: translateX(0);
 }
+}
+
+#certs-move{
+  view-timeline-name: --cert;
+  animation-timeline: --cert;
+	animation-name: certs-move;
+	animation-range: entry 0% cover 30%;
+	animation-fill-mode: both;
+  animation-direction:forwards;
 }
