@@ -146,6 +146,7 @@
     align-items: center; /* Centra verticalmente los elementos */
     color:#111;
     width: 100%;
+    flex-wrap: wrap; 
     height: 100vh;
     font-weight: 800;
     font-size: xx-large;
@@ -425,7 +426,7 @@
     align-items:center;
     width:50%;
     position: relative;
-    left:2rem;
+    left:3rem;
   }
  
 }
