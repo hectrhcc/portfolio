@@ -369,7 +369,7 @@
 }
 
 .cv{
-  margin-left: 70px;
+  margin-left:6rem;
   margin-top: 0px;
   text-align: center;
   background: var(--main-gray);
@@ -437,7 +437,7 @@
   from {
   transform: translateX(-100%); /*si viene de la izq no genera desbordamiento*/
   }   /*translateX(100%) genera un espacio hacia la der como si algo fuera muy ancho */    
-  to {
+  to { /*si el efecto viene de la derecha genera un espacio adicional fantasma */
   transform: translateX(0);
   }
   }
