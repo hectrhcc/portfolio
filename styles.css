@@ -435,8 +435,8 @@
 
 @keyframes titulo1 {
   from {
-  transform: translateX(-100%);
-  }
+  transform: translateX(-100%); /*si viene de la izq no genera desbordamiento*/
+  }   /*translateX(100%) genera un espacio hacia la der como si algo fuera muy ancho */    
   to {
   transform: translateX(0);
   }
@@ -444,8 +444,8 @@
 
   @keyframes titulo2 {
     from {
-    transform: translateX(100%);
-    }
+    transform: translateX(-100%); /*tiene que ser -100 para que no desborde*/
+    } /*no quiero generalizar que siempre pase, esto al menos pasa aqui*/
     to {
     transform: translateX(0);
     }
@@ -469,7 +469,7 @@
 }
 @keyframes jobs-move {
 from {
-transform: translateX(100%);
+transform: translateX(-100%);
 }
 to {
 transform: translateX(0);
@@ -480,7 +480,7 @@ transform: translateX(0);
   view-timeline-name: --job;
   animation-timeline: --job;
 	animation-name: jobs-move;
-	animation-range: entry 0% cover 22%;
+	animation-range: entry 0% cover 20%;
 	animation-fill-mode: both;
   animation-direction:forwards;
 }
@@ -499,7 +499,7 @@ transform: translateX(0);
   view-timeline-name: --cert;
   animation-timeline: --cert;
 	animation-name: certs-move;
-	animation-range: entry 0% cover 22%;
+	animation-range: entry 0% cover 20%;
 	animation-fill-mode: both;
   animation-direction:forwards;
 }
