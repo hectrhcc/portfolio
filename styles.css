@@ -411,7 +411,9 @@
     font-size:35%;
   }
   .dev, .cv{
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
     border:3px solid greenyellow;
   }
   .welcome-section{
