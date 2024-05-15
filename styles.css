@@ -97,14 +97,7 @@
     display: block;
     width: 100%;
   }
-  .prenav{
-    display: flex;
-    justify-content: flex-start;
-    position: fixed;
-    top: 13px;
-    left: 10px;
-    font-size: xx-large;
-  }
+
   .nav {
     display: flex;
     justify-content: flex-end;
