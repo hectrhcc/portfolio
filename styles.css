@@ -434,3 +434,39 @@
   flex: 0 0 auto; /* Evita que los elementos se estiren para ocupar todo el espacio disponible */
   margin: 0 10px; /* Ajusta el margen entre los elementos según sea necesario */
 }
+
+
+#jobs-move, 
+#certs-move {
+  animation-play-state: paused; 
+}
+
+.animate {
+  animation-play-state: running;
+}
+
+#jobs-move {
+  animation: job-move 3s;
+}
+  
+@keyframes job-move {
+from {
+transform: translateX(100%);
+}
+to {
+transform: translateX(0);
+}
+}
+  
+#certs-move{
+animation: certs-move 3s;
+}
+  
+@keyframes certs-move {
+from {
+transform: translateX(-100%);
+}
+to {
+transform: translateX(0);
+}
+}
