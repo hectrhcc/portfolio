@@ -417,7 +417,7 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    
+    font-size:xx-large;
   }
   .cv{
     display: flex;
@@ -425,7 +425,7 @@
     align-items:center;
     width:50%;
     position: relative;
-    right:6rem;
+    right:1rem;
   }
  
 }
