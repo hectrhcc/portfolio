@@ -410,10 +410,14 @@
   html {
     font-size:35%;
   }
-  .cv{
-    
+  .dev, .cv{
+    margin: 0 auto;
     border:3px solid greenyellow;
   }
+  .welcome-section{
+    min-height: 77vh;
+  }
+
 }
 
 .oculto{
