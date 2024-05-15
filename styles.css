@@ -54,13 +54,19 @@
     html {
       font-size: 60%;
     }
+    .welcome-section{
+      min-height: 77vh;
+    }
   }  
   /* 980px / 16px = 61.25em */
   @media (max-width: 61.25em) {
     html {
       font-size: 58%;
     }
-    
+    .welcome-section{
+      min-height: 77vh;
+    }
+
   }
    
   body {
@@ -410,16 +416,19 @@
   html {
     font-size:35%;
   }
-  .dev, .cv{
+  .dev{
     display: flex;
     justify-content: center;
     align-items:center;
-    border:3px solid greenyellow;
+    
   }
-  .welcome-section{
-    min-height: 77vh;
+  .cv{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width:90%;
   }
-
+ 
 }
 
 .oculto{
