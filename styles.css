@@ -487,7 +487,7 @@ transform: translateX(0);
   view-timeline-name: --job;
   animation-timeline: --job;
 	animation-name: jobs-move;
-	animation-range: entry 0% cover 25%;
+	animation-range: entry 0% cover 22%;
 	animation-fill-mode: both;
   animation-direction:forwards;
 }
@@ -506,7 +506,7 @@ transform: translateX(0);
   view-timeline-name: --cert;
   animation-timeline: --cert;
 	animation-name: certs-move;
-	animation-range: entry 0% cover 25%;
+	animation-range: entry 0% cover 22%;
 	animation-fill-mode: both;
   animation-direction:forwards;
 }
