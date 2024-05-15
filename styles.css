@@ -47,6 +47,9 @@
   html {
     font-size: 55%;
   }
+  .welcome-section{
+    background-color: #000;
+  }
   
 }  
   /* 1200px / 16px = 75em */
@@ -54,8 +57,8 @@
     html {
       font-size: 60%;
     }
-    .dev{
-      border:3px solid greenyellow;
+    .welcome-section{
+      background-color: #ff7f50;
     }
   }  
   /* 980px / 16px = 61.25em */
@@ -63,8 +66,8 @@
     html {
       font-size: 58%;
     }
-    .dev{
-      border:3px solid greenyellow;
+    .welcome-section{
+      background-color: #ff7f50;
     }
 
   }
