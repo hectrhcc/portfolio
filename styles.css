@@ -424,7 +424,8 @@
     justify-content: center;
     align-items:center;
     width:50%;
-    left:4rem;
+    position: relative;
+    right:6rem;
   }
  
 }
