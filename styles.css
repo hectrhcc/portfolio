@@ -47,9 +47,6 @@
   html {
     font-size: 55%;
   }
-  .cv{
-  border:3px solid yellowgreen;
-}
  
   
 }  
@@ -436,7 +433,7 @@
     align-items:center;
     width:50%;
     position: relative;
-    right:5.5rem;
+    left:-1rem;
     border:3px solid crimson;
   
   }
