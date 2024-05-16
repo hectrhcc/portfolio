@@ -433,9 +433,7 @@
     align-items:center;
     width:50%;
     position: relative;
-    left:-1rem;
-    border:3px solid crimson;
-  
+    right:1rem;
   }
  
 }
