@@ -432,8 +432,10 @@
     font-size:x-large;
   }
   .cv{
-    display: block;
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
     left:4.5rem;
     width:50%;
     border:2px solid #91A8C0;
