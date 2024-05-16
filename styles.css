@@ -505,19 +505,23 @@
 	animation-fill-mode: both;
   animation-direction:forwards;
 }
-@keyframes jobs-move {
-from {
-transform: translateX(-100%);
-}
-to {
-transform: translateX(0);
-}
+@keyframes mostrarTrabajo {
+	from {
+		opacity: 0;
+		scale: 25%;
+	}
+
+	to {
+		opacity: 1;
+		scale: 100%;
+	}
 }
 
-#jobs-move {
+.jobs-move {
   view-timeline-name: --job;
   animation-timeline: --job;
-	animation-name: jobs-move;
+  view-timeline-axis: block;
+	animation-name: mostrarTrabajo;
 	animation-range: entry 0% cover 20%;
 	animation-fill-mode: both;
   animation-direction:forwards;
