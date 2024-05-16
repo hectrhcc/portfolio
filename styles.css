@@ -55,7 +55,10 @@
     html {
       font-size: 60%;
     }
-   
+    .cv{
+      position: relative;
+      right:-1rem;
+    }
   }  
   /* 980px / 16px = 61.25em */
   @media (max-width: 61.25em) {
@@ -64,7 +67,7 @@
     }
     .cv{
       position: relative;
-      left:1rem;
+      left:1.5rem;
     }
 
   }
@@ -414,7 +417,7 @@
     border-bottom: 0.2rem solid beige;
 }
 
-@media (max-width: 459px) {
+@media (max-width: 28.6875em) {
   html {
     font-size:35%;
   }
@@ -430,7 +433,8 @@
     align-items:center;
     width:50%;
     position: relative;
-    left:5rem;
+    right:4.1rem;
+  
   }
  
 }
