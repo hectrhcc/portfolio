@@ -421,9 +421,6 @@
     border-bottom: 0.2rem solid beige;
 }
 
-.centrar{
-margin: 0 auto;
-}
 
 
 @media (max-width: 28.6875em) {
@@ -446,9 +443,7 @@ margin: 0 auto;
   }
 
   .saludo{
-    
-    border:3px solid green;
-    font-size: xx-large;
+    font-size: x-large;
   }
  
  
