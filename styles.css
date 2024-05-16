@@ -62,7 +62,10 @@
     html {
       font-size: 58%;
     }
-    
+    .cv{
+      position: relative;
+      left:1rem;
+    }
 
   }
    
@@ -427,7 +430,7 @@
     align-items:center;
     width:50%;
     position: relative;
-    left:4rem;
+    left:5rem;
   }
  
 }
