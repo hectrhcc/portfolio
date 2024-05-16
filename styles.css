@@ -552,3 +552,14 @@ transform: translateX(0);
 }
 }
 
+@media (min-width: 1265px){
+.cv{
+  border:1px solid #45567D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:55%;
+}
+
+}
+
