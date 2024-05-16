@@ -59,6 +59,7 @@
       position: relative;
       right:-1rem;
     }
+
   }  
   /* 980px / 16px = 61.25em */
   @media (max-width: 61.25em) {
@@ -68,6 +69,9 @@
     .cv{
       position: relative;
       left:1.5rem;
+    }
+    .welcome-section{
+      padding:5rem;
     }
 
   }
@@ -428,13 +432,13 @@
     font-size:x-large;
   }
   .cv{
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    width:50%;
+    display: block;
     position: relative;
-    
+    left:4.5rem;
+    width:50%;
+    border:2px solid #91A8C0;
   }
+  
  
 }
 
