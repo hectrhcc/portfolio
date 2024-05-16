@@ -522,3 +522,10 @@ transform: translateX(0);
 	animation-fill-mode: both;
   animation-direction:forwards;
 }
+
+@media (min-width: 80em) {
+.welcome-section{
+  flex-direction: row;
+}
+}
+
