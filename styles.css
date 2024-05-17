@@ -150,7 +150,7 @@
   }
   
   .nav-list a:hover {
-    background: var(--main-blue);
+    color: var(--main-purple);
   }
   
   .welcome-section {
@@ -405,7 +405,7 @@
   }
 
 .download{
-  color:#45567D;
+  color:var(--main-nav);
   text-decoration: none;
 }
 
@@ -422,7 +422,7 @@
 }
 
 .cv:hover{
-  background-color:#45567D;
+  background-color:var(--main-nav);
   color: #fff;
   border: 1px solid white;
 }
