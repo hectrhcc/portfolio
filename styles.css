@@ -590,7 +590,7 @@ transform: translateX(0);
 
 @media (min-width: 1265px){
 .cv{
-  border:1px solid #45567D;
+  border:1px solid var(--main-nav);
   display: flex;
   justify-content: center;
   align-items: center;
