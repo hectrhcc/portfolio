@@ -1,8 +1,10 @@
 :root {
     --main-white: #f0f0f0;
+    --main-nav: #261250;
     --main-red: #be3144;
     --main-blue: #45567d;
     --main-gray: #303841;
+    --main-purple: #6942BB;
   }
   * {
     margin: 0;
@@ -121,7 +123,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: var(--main-red);
+    background: var(--main-nav);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     z-index: 10;
   }
@@ -187,13 +189,14 @@
   .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--main-blue);  
+    background: whitesmoke;  
+    color:var(--main-nav);
   }
   
   .projects-section-header {
     max-width: 640px;
     margin: 0 auto 6rem auto;
-    border-bottom: 0.2rem solid var(--main-white);
+    border-bottom: 0.2rem solid var(--main-nav);
     
   }
  
@@ -262,9 +265,26 @@
   }
   
   .project {
-    background: var(--main-gray);
+    background:whitesmoke;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
+    border: 3px solid var(--main-purple);
+  }
+
+  .project2 {
+    background:#361f66;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    border: 3px solid #111;
+  }
+
+  .project2:hover{
+    background-color:var(--main-purple);
+    
+  }
+
+  .project:hover{
+    background-color:rgba(255, 255, 255, 0.843);
   }
   
   .code {
@@ -286,6 +306,7 @@
     font-size: 2rem;
     padding: 1.5rem 0.3rem;
     border-radius: 10px;
+    color:var(--main-nav);
   }
   
   .btn {
@@ -296,7 +317,7 @@
   
   .btn-show-all {
     font-size: 2rem;
-    background: var(--main-gray);
+    background: #361f66; ;
     transition: background 0.3s ease-out;
   }
   
@@ -365,7 +386,7 @@
     justify-content: space-evenly;
     padding: 2rem;
     background: var(--main-gray);
-    border-top: 4px solid var(--main-red);
+    border-top: 4px solid var(--main-nav);
   }
   
   footer > p {
@@ -410,15 +431,30 @@
   color: #fff; 
 }
 
+.project-title2{
+  font-size: 2rem;
+  padding: 1.5rem 0.3rem;
+  border-radius: 10px;
+  color:var(--main-white);
+}
+
+.code2{
+  color:var(--main-blue);
+  transition: color 0.3s ease-out;
+}
+
+.project2:hover .code2 {
+  color: #ff7f50;
+}
 
 .certification-section {
   text-align: center;
   padding: 10rem 2rem;
-  background:#1F212E ;
+  background:rgb(26, 24, 62);
 }
 
 .certification-section-header{
-  color: beige;
+  color: var(--main-white);
   max-width: 640px;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid beige;
