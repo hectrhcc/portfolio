@@ -36,7 +36,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888; /* Color del "pulgarcito" de la barra de desplazamiento */
+  background: #aba7a7; /* Color del "pulgarcito" de la barra de desplazamiento */
   border: 1px solid var(--main-nav);
 }
 
@@ -51,14 +51,6 @@
     transform: translateX(0);
     opacity: 1;
   }
-}
-
-.profile {
-  animation: aparecerDesdeIzquierda 0.5s ease forwards;
-}
-
-.profile {
-  position: relative; 
 }
 
  /* 460px / 16px = 28.75em */
@@ -183,18 +175,19 @@
     font-weight: 800;
     font-size: xx-large;
     background-color: #111;
-    background-image: linear-gradient(62deg, #e9eceffd 0%, #c0bec3 100%);
+    background-image: linear-gradient(62deg, #e9eceffd 0%, #d2cfd6 100%);
     /*position desconfigura en este caso*/
   }
   
   .profile{
     width: 180px;
     height:180px;
-    margin-right: 20px;
-    margin-left:5px;
+    /*margin-right: 20px;
+    margin-left:5px;*/
+    position: relative; 
+    animation: aparecerDesdeIzquierda 0.5s ease forwards;
+    
   }
-  
-
   .dev {
     font-size: 3rem;
     font-weight: 200;
@@ -282,19 +275,20 @@
   }
   
   .project {
-    background:whitesmoke;
+    background:#eeeeee;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
     border: 3px solid var(--main-purple);
     transition: transform 0.3s ease-out;
+  
   }
 
   .project2 {
-    background:#361f66;
+    background:#3e2476;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
     border: 3px solid #111;
-    transition: transform 0.3s ease-out;
+    
   }
 
   .project2:hover{
@@ -306,22 +300,26 @@
   .project:hover{
     background-color:rgba(255, 255, 255, 0.843);
     transform: translateY(-12px);
+    
   }
   
   .code {
-    color: var(--main-gray);
+    color:var(--main-blue);
     transition: color 0.3s ease-out;
   }
   
   .project:hover .code {
-    color: #ff7f50;
+    color: #ff7f50 ;
   }
   
   .project-image {
     height: calc(100% - 6.8rem);
     width: 100%;
     object-fit: cover;
+    
   }
+  
+  
   
   .project-title {
     font-size: 2rem;
@@ -432,7 +430,7 @@
 
 .cv{
   margin-left:6rem;
-  margin-top: 0px;
+  margin-top:1rem;
   text-align: center;
   background: var(--main-gray);
   border-radius:11px;
@@ -440,12 +438,15 @@
   padding: 9px;
   border: 1px solid black;
   background-color: transparent;
+  transition: all .2s ease-out;
+    
 }
 
 .cv:hover{
   background-color:var(--main-nav);
   color: #fff;
   border: 1px solid white;
+  transform: scale(1.1);
 }
 
 .cv:hover .download {
