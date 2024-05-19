@@ -36,8 +36,8 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #aba7a7; /* Color del "pulgarcito" de la barra de desplazamiento */
-  border: 1px solid var(--main-nav);
+  background: linear-gradient(transparent, #888);
+  border-radius:4rem;
 }
 
 
@@ -663,3 +663,65 @@ transform: translateX(0);
 
 }
 
+.marquee {
+  height:0.5rem;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  top:3rem;
+  padding-bottom:7rem;
+  width:55%;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  background: linear-gradient(130.08deg, #37414b 0%, #303841 100%);
+}
+.span1{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top:2.5rem;
+}
+.span1 img{
+  margin-right:8rem;
+  width:25%;
+}
+.marquee--inner {
+  
+  display: inline-block;
+  width:50%;
+  position: relative;
+  animation: marquee 40s linear infinite;
+}
+
+.marquee--inner:hover {
+  animation-play-state: paused;
+}
+
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+.orb {
+  width: flex;
+  height:auto;
+  display: flex;
+  margin: 0 24.7px;
+  float: left;
+  transition: all .2s ease-out;
+  filter: grayscale(1);
+}
+
+.orb:hover {
+  transform: scale(1.2);
+  opacity: .5;
+  cursor: pointer;
+  filter: none;
+}
