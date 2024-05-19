@@ -25,6 +25,23 @@
     font-size: 62.5%;
     scroll-behavior: smooth;
   }
+
+  /* Estilo para la barra de desplazamiento en navegadores webkit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 1.5rem; /* Ancho de la barra */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color del "pulgarcito" de la barra de desplazamiento */
+  border: 1px solid var(--main-nav);
+}
+
+
+
 @keyframes aparecerDesdeIzquierda {
   from {
     transform: translateX(-100%);
