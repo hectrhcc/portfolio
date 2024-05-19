@@ -58,7 +58,12 @@
   html {
     font-size: 55%;
   }
-  
+  .cv{
+    transition: all .2s ease-out;
+  }
+  .cv:hover{
+    transform: scale(1.2);
+  }
  
   
 }  
@@ -70,8 +75,12 @@
     .cv{
       position: relative;
       right:-1rem;
-      
+      transition: all .2s ease-out; 
     }
+    .cv:hover{
+      transform: scale(1.2);
+    }
+   
 
   }  
   /* 980px / 16px = 61.25em */
@@ -82,8 +91,10 @@
     .cv{
       position: relative;
       left:1.5rem;
-      
-
+      transition: all .2s ease-out;
+    }
+    .cv:hover{
+      transform: scale(1.2);
     }
     .welcome-section{
       padding:5rem;
@@ -152,6 +163,12 @@
     .nav-list {
       margin: 0 1rem;
     }
+    .cv{
+      transition: all .2s ease-out;
+    }
+    .cv:hover{
+      transform: scale(1.2);
+    }
   }
   
   .nav-list a {
@@ -217,6 +234,12 @@
     .projects-section-header {
       font-size: 4rem;
     }
+    .cv{
+      transition: all .2s ease-out;
+    }
+    .cv:hover{
+      transform: scale(1.2);
+    }
 
   }
   
@@ -273,6 +296,12 @@
   
     .projects-grid {
       grid-template-columns: 1fr;
+    }
+    .cv{
+      transition: all .2s ease-out;
+    }
+    .cv:hover{
+      transform: scale(1.2);
     }
   }
   
@@ -614,6 +643,12 @@ transform: translateX(0);
 @media (min-width: 80em) {
 .welcome-section{
   flex-direction: row;
+}
+.cv{
+  transition: all .2s ease-out;
+}
+.cv:hover{
+  transform: scale(1.2);
 }
 }
 
