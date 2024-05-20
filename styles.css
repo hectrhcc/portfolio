@@ -665,7 +665,7 @@ transform: translateX(0);
 }
 
 .marquee {
-  
+  margin: 0 auto;
   height:0.5rem;
   overflow: hidden;
   box-sizing: border-box;
@@ -780,4 +780,11 @@ transform: translateX(0);
     display: none;
   }
 
+}
+
+
+@media (orientation: landscape) {
+.marquee{
+  display: none;
+}
 }
