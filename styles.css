@@ -782,9 +782,17 @@ transform: translateX(0);
 
 }
 
-
+/*
 @media (orientation: landscape) {
 .marquee{
   display: none;
 }
+}
+/*Lo quite de todos los landscape pero solo fallaba en 
+iPhone 6-8 landscape · width: 667px*/
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+  .marquee{
+    display: none;
+  }
 }
