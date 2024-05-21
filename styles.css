@@ -375,7 +375,7 @@
   
   .project-title {
     font-size: 2rem;
-    padding: 1.5rem 0.3rem;
+    padding: 1.5rem 0.3rem 2.6rem  0.3rem ;
     border-radius: 10px;
     color:var(--main-nav);
   }
@@ -518,7 +518,7 @@
 
 .project-title2{
   font-size: 2rem;
-  padding: 1.5rem 0.3rem;
+  padding: 1.5rem 0.3rem 0.1rem 0.3rem;
   border-radius: 10px;
   color:var(--main-white);
 }
