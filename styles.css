@@ -72,7 +72,9 @@
     transform: scale(1.2);
   }
  
-  
+  .skills{
+    margin-bottom:1rem;
+  }
 }  
   /* 1200px / 16px = 75em */
   @media (max-width: 75em) {
@@ -176,6 +178,9 @@
     .cv:hover{
       transform: scale(1.2);
     }
+    .skills{
+      margin-bottom:1rem;
+    }
   }
   
   .nav-list a {
@@ -247,6 +252,9 @@
     .cv:hover{
       transform: scale(1.2);
     }
+    .skills{
+      margin-bottom:1rem;
+    }
 
   }
   
@@ -309,6 +317,9 @@
     }
     .cv:hover{
       transform: scale(1.2);
+    }
+    .skills{
+      margin-bottom:1rem;
     }
   }
   
@@ -798,15 +809,6 @@ transform: translateX(0);
   }
 
 }
-
-/*
-@media (orientation: landscape) {
-.marquee{
-  display: none;
-}
-}
-/*Lo quite de todos los landscape pero solo fallaba en 
-iPhone 6-8 landscape · width: 667px*/
 
 @media screen and (max-width: 668px) and (orientation: landscape) {
   .marquee{
