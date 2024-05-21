@@ -71,10 +71,10 @@
   .cv:hover{
     transform: scale(1.2);
   }
- 
   .skills{
-    margin-bottom:1rem;
+    font-size: xx-small;
   }
+
 }  
   /* 1200px / 16px = 75em */
   @media (max-width: 75em) {
@@ -179,7 +179,7 @@
       transform: scale(1.2);
     }
     .skills{
-      margin-bottom:1rem;
+      font-size: xx-small;
     }
   }
   
@@ -253,7 +253,7 @@
       transform: scale(1.2);
     }
     .skills{
-      margin-bottom:1rem;
+      font-size: xx-small;
     }
 
   }
@@ -319,7 +319,7 @@
       transform: scale(1.2);
     }
     .skills{
-      margin-bottom:1rem;
+      font-size: xx-small;
     }
   }
   
@@ -427,6 +427,9 @@
   @media (max-width: 28.75em) {
     .contact-section-header > h2 {
       font-size: 4rem;
+    }
+    .skills{
+      font-size: xx-small;
     }
   }
   
@@ -570,7 +573,9 @@
   .saludo{
     font-size: x-large;
   }
- 
+  .skills{
+    font-size: xx-small;
+  }
  
 }
 
