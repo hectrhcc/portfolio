@@ -469,7 +469,13 @@
 .download{
   color:var(--main-nav);
   text-decoration: none;
+  
 }
+
+.icono-descarga {
+  margin-right:0.5rem;
+}
+
 
 .cv{
   margin-left:6rem;
