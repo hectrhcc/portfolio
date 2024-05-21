@@ -42,15 +42,22 @@
 
 
 
-@keyframes aparecerDesdeIzquierda {
+@keyframes aparecerDesdeAbajo {
   from {
-    transform: translateX(-100%);
+    transform: translateY(100%);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
+}
+
+.skills{
+  color: #888;
+  font-size: small;
+  display: block;
+  text-align: center;
 }
 
  /* 460px / 16px = 28.75em */
@@ -204,7 +211,7 @@
     margin-right: 20px;
     margin-left:5px;
     position: relative; 
-    animation: aparecerDesdeIzquierda 0.5s ease forwards;
+    animation: aparecerDesdeAbajo 0.5s ease forwards;
     
   }
   .dev {
@@ -342,7 +349,10 @@
   .project:hover .code {
     color: #ff7f50 ;
   }
-  
+  .project:hover .skills {
+    color: #666 ;
+  }
+
   .project-image {
     height: calc(100% - 6.8rem);
     width: 100%;
@@ -359,6 +369,7 @@
     color:var(--main-nav);
   }
   
+
   .btn {
     display: inline-block;
     padding: 1rem 2rem;
@@ -699,7 +710,7 @@ transform: translateX(0);
   display: inline-block;
   width:50%;
   position: relative;
-  animation: marquee 40s linear infinite;
+  animation: marquee 50s linear infinite;
 }
 
 .marquee--inner:hover {
@@ -795,4 +806,6 @@ iPhone 6-8 landscape · width: 667px*/
   .marquee{
     display: none;
   }
+/*Lo quite porque solo falla en  iPhone 6-8 landscape · width: 667px
+y esta la incluye*/
 }
