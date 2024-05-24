@@ -55,7 +55,13 @@
 
 .skills{
   color: #888;
-  font-size: small;
+  font-size: x-small;
+  display: block;
+  text-align: center;
+}
+.skills2{
+  color: #888;
+  font-size: xx-small;
   display: block;
   text-align: center;
 }
@@ -361,7 +367,10 @@
     color: #ff7f50 ;
   }
   .project:hover .skills {
-    color: #666 ;
+    color: #333 ;
+  }
+  .project2:hover .skills2 {
+    color: #d3d2d2 ;
   }
 
   .project-image {
