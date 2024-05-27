@@ -194,7 +194,6 @@
   }
   .contenedor1{
     min-width:50% ;
-
   }
   .año{
     font-size: small;
@@ -227,8 +226,8 @@
   }
   .contenedor2{
     position: relative;
-    bottom:11.5rem;
-    right:20rem;
+    right:17rem;
+    top:-11rem;
   }
   .barrita1{
     border: 1px solid cadetblue;
@@ -1057,6 +1056,7 @@ y esta la incluye*/
 }
 .contenedor1{
   position: relative;
-  left: 6rem;
+  left: 12rem;
+  border:1px solid blue;
 }
 }
