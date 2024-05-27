@@ -80,13 +80,22 @@
   .skills{
     font-size: xx-small;
   }
+
+.experiencia{
+  display: flex;
+  flex-direction: column;
+  margin-bottom:40rem;
+}
 .contenedor2{
-  display: none;
+  transform: translateY(95rem) translateX(-12rem);
+  
+  
 }
  .contenedor1{
   position: relative;
   right:12rem;
  } 
+ 
 }  
   /* 1200px / 16px = 75em */
   @media (max-width: 75em) {
@@ -185,8 +194,8 @@
   }
   .experiencia{
     display: flex;
-    flex-direction: row;
-    gap:0.1rem;
+    flex-direction:row;
+    gap:5rem;
     text-align: center;
     align-items: center;
     color:#111;
