@@ -1056,7 +1056,7 @@ y esta la incluye*/
 }
 .contenedor1{
   position: relative;
-  left: 12rem;
+  left: -15rem;
   border:1px solid blue;
 }
 }
