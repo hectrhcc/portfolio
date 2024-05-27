@@ -83,10 +83,10 @@
 .contenedor2{
   display: none;
 }
- 
-
-
- 
+ .contenedor1{
+  position: relative;
+  right:12rem;
+ } 
 }  
   /* 1200px / 16px = 75em */
   @media (max-width: 75em) {
@@ -122,8 +122,12 @@
     }
     .contenedor2{
       position: relative;
-      left:-5rem;
-      top:-36rem;
+      left:-8rem;
+      top:-24rem;
+    }
+    .contenedor1{
+      position: relative;
+      right:6rem;
     }
    
   }
@@ -264,7 +268,7 @@
     visibility: hidden;
     font-size: x-small;
     text-align: justify;
-    width: min(100%, 20rem); /* Ancho mínimo deseado en rem */
+    width: min(150%, 20rem); /* Ancho mínimo deseado en rem */
     position: relative;
     bottom:1rem;
     left:1rem;
@@ -282,8 +286,7 @@
     font-size: x-small;
     color:#565555;
     text-align:justify;  
-    width: min(100%, 20rem); /* Ancho mínimo deseado en rem */
-    
+    width: min(150%, 20rem); /* Ancho mínimo deseado en rem */
   }
   .barrita-html{
     display: inherit;
@@ -882,6 +885,7 @@ transform: translateX(0);
 .contenedor2{
   position: relative;
   right:15rem;
+  
 }
 .forma{
   
@@ -1047,4 +1051,12 @@ transform: translateX(0);
   }
 /*Lo quite porque solo falla en  iPhone 6-8 landscape · width: 667px
 y esta la incluye*/
+.contenedor2{
+  position: relative;
+  right: 6rem;
+}
+.contenedor1{
+  position: relative;
+  left: 6rem;
+}
 }
