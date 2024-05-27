@@ -87,9 +87,12 @@
   margin-bottom:40rem;
 }
 .contenedor2{
-  transform: translateY(95rem) translateX(-12rem);
+  transform: translateY(95rem) translateX(-9rem);
   
-  
+}
+.habilidades{
+  text-align: center;
+  font-size: medium;
 }
  .contenedor1{
   position: relative;
