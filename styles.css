@@ -80,7 +80,20 @@
   .skills{
     font-size: xx-small;
   }
-
+.contenedor2{
+  
+  position: relative;
+  left:21rem;
+}
+.contenedor1{
+  
+  position: relative;
+  right:21rem;
+}
+.experiencia{
+  
+  width: 106%;
+}
  
 }  
   /* 1200px / 16px = 75em */
@@ -115,7 +128,12 @@
     .welcome-section{
       padding:5rem;
     }
-
+    .contenedor2{
+      position: relative;
+      left:-5rem;
+      top:-36rem;
+    }
+   
   }
    
   body {
