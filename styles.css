@@ -1072,4 +1072,17 @@ y esta la incluye*/
 }
 }
 
+@media screen and (max-width: 685px) and (orientation: landscape) {
+
+.contenedor2{
+  position: relative;
+  right: 6rem;
+}
+.contenedor1{
+  position: relative;
+  left: -15rem;
+  border:1px solid blue;
+}
+}
+
 
