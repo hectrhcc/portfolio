@@ -1061,17 +1061,3 @@ y esta la incluye*/
 }
 
 
-@media screen and (max-width: 649px) and (orientation: landscape) {
-
-/*Lo quite porque solo falla en  iPhone 6-8 landscape · width: 667px
-y esta la incluye*/
-.contenedor2{
-  position: relative;
-  right: 6rem;
-}
-.contenedor1{
-  position: relative;
-  left: -15rem;
-  border:1px solid blue;
-}
-}
