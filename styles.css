@@ -81,19 +81,11 @@
     font-size: xx-small;
   }
 .contenedor2{
-  
-  position: relative;
-  left:21rem;
+  display: none;
 }
-.contenedor1{
-  
-  position: relative;
-  right:21rem;
-}
-.experiencia{
-  
-  width: 106%;
-}
+ 
+
+
  
 }  
   /* 1200px / 16px = 75em */
