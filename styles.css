@@ -55,7 +55,7 @@
 
 .skills{
   color: #888;
-  font-size: x-small;
+  font-size: small;
   display: block;
   text-align: center;
 }
@@ -576,12 +576,8 @@
   .project-image {
     height: calc(100% - 6.8rem);
     width: 100%;
-    object-fit: cover;
-    
-  }
-  
-  
-  
+    object-fit: cover;    
+  } 
   .project-title {
     font-size: 2rem;
     padding: 1.5rem 0.3rem 2.6rem  0.3rem ;
@@ -1083,5 +1079,3 @@ y esta la incluye*/
   left: -15rem;
 }
 }
-
-
