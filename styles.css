@@ -427,10 +427,8 @@ text-align: left;
 }
 .dev {
   font-size: 3rem;
-  font-weight: 200;
-  font-style: italic;
+  font-weight: 400;
   color: var(--main-red);
-  font-weight: bold;
 }
 
 .projects-section {
@@ -549,7 +547,7 @@ text-align: left;
 
 .project2:hover{
   background-color:var(--main-purple);
-  transform: translateY(-10px); 
+  transform: translateY(-12px); 
 }
 
 
@@ -702,10 +700,10 @@ margin-left:6rem;
 margin-top:1rem;
 text-align: center;
 background-color:#261250;
-border-radius:11px;
+border-radius:0.7rem;
 font-size:small;
-padding: 9px;
-border: none;
+padding: 0.7rem ;
+border:none;
 transition: all .2s ease-out;
 
 }
@@ -718,7 +716,7 @@ transform: scale(1.1);
 }
 
 .cv:hover .download {
-color: #fff; 
+color:#fff; 
 }
 
 .project-title2{
@@ -757,19 +755,21 @@ html {
   font-size:35%;
 }
 .dev{
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  font-size:x-large;
+  font-size:smaller;
+  
 }
+
 .cv{
   
   position: relative;
-  left:2.5rem;
-  width:50%;
-  border:2px solid var(--main-nav);
+  left:-1.2rem;
   transition: all .2s ease-out;
+  border:3px solid var(--main-nav);
+}
 
+.download{
+  position: relative;
+  right:0.3rem;
 }
 .cv:hover{
   transform: scale(1.1);
@@ -1006,6 +1006,7 @@ filter: none;
 .marquee{ 
 margin-bottom:1rem;
 }
+
 
 
 }
