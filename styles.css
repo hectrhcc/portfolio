@@ -111,7 +111,7 @@ right:12rem;
     transition: all .2s ease-out; 
   }
   .cv:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
  
 
@@ -188,7 +188,7 @@ img {
   left: 0;
   width: 100%;
   background: var(--main-nav);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.15rem 0 #000;
   z-index: 10;
 }
 .nav-list {
@@ -381,7 +381,7 @@ text-align: left;
     
   }
   .cv:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .skills{
     font-size: xx-small;
@@ -396,7 +396,7 @@ text-align: left;
 }
 
 .nav-list a:hover {
-  color: var(--main-purple);
+  color:#a475fb;
 }
 
 .welcome-section {
@@ -454,7 +454,7 @@ text-align: left;
     transition: all .2s ease-out;
   }
   .cv:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .skills{
     font-size: xx-small;
@@ -521,7 +521,7 @@ text-align: left;
     transition: all .2s ease-out;
   }
   .cv:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .skills{
     font-size: xx-small;
@@ -588,7 +588,7 @@ text-align: left;
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
-  border-radius: 2px;
+  border-radius: 0.3rem;
 }
 
 .btn-show-all {
@@ -598,7 +598,8 @@ text-align: left;
 }
 
 .btn-show-all:hover {
-  background: var(--main-red);
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  transform: scale(1.1)
 }
 
 .btn-show-all:hover > i {
@@ -702,14 +703,14 @@ text-align: center;
 background-color:#261250;
 border-radius:0.7rem;
 font-size:small;
-padding: 0.7rem ;
+padding: 0.7rem 0.8rem ;
 border:none;
 transition: all .2s ease-out;
 
 }
 
 .cv:hover{
-background-color:var(--main-nav);
+background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 color: #fff;
 border: none;
 transform: scale(1.1);
@@ -760,11 +761,9 @@ html {
 }
 
 .cv{
-  
   position: relative;
   left:-1.2rem;
   transition: all .2s ease-out;
-  border:3px solid var(--main-nav);
 }
 
 .download{
@@ -772,7 +771,8 @@ html {
   right:0.3rem;
 }
 .cv:hover{
-  transform: scale(1.1);
+  transform: scale(1.5);
+  border:0.2rem solid transparent;
 }
 
 .saludo{
@@ -888,6 +888,7 @@ transition: all .2s ease-out;
 }
 .cv:hover{
 transform: scale(1.2);
+
 }
 .contenedor2{
 position: relative;
