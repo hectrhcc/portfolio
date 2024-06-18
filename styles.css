@@ -25,23 +25,17 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
 /* Estilo para la barra de desplazamiento en navegadores webkit (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
 width: 1.5rem; /* Ancho de la barra */
 }
-
 ::-webkit-scrollbar-track {
 background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
 }
-
 ::-webkit-scrollbar-thumb {
 background: linear-gradient(transparent, #888);
 border-radius:4rem;
 }
-
-
-
 @keyframes aparecerDesdeAbajo {
 from {
   transform: translateY(100%);
@@ -52,7 +46,6 @@ to {
   opacity: 1;
 }
 }
-
 .skills{
 color: #888;
 font-size: small;
@@ -65,7 +58,9 @@ font-size: xx-small;
 display: block;
 text-align: center;
 }
-
+#experiencia{
+  border-top:0.1rem solid transparent;
+}
 /* 460px / 16px = 28.75em */
 @media (max-width: 28.75em) {
 html {
@@ -433,7 +428,7 @@ text-align: left;
 
 .projects-section {
   text-align: center;
-  padding: 10rem 2rem;
+  padding: 7rem 2rem;
   background: whitesmoke;  
   color:var(--main-nav);
 }
@@ -738,7 +733,7 @@ color: #ff7f50;
 
 .certification-section {
 text-align: center;
-padding: 10rem 2rem;
+padding: 7rem 2rem;
 background:rgb(26, 24, 62);
 }
 
