@@ -316,10 +316,11 @@ min-height:7rem;
 }
 .intro{
   text-align: center;
+  
   color: #111;
   font-size: medium;
   position: relative;
-  top:12rem;
+  top:30%;
   margin-bottom: 0.8rem;
 }
 
@@ -452,6 +453,7 @@ min-height:7rem;
 .btn-show-all {
   font-size: 2rem;
   background: #361f66; ;
+  border: 0.2rem solid black;
   transition: background 0.3s ease-out;
 }
 
@@ -481,7 +483,7 @@ min-height:7rem;
   text-align: center;
   width: 100%;
   position: relative;
-  top:12rem;
+  top:25rem;
   flex-wrap: nowrap;
   
 }
@@ -547,8 +549,12 @@ transition: all .2s ease-out;
 .cv:hover{
 background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 color: #fff;
-border: none;
-transform: scale(1.2);
+border:0.2rem solid black;
+transform: scale(1.1);
+}
+
+.cv:hover > i {
+  transform: translateX(2px);
 }
 
 .cv:hover .download {
@@ -867,7 +873,9 @@ filter: none;
     left:2%;
     margin-bottom: 4rem;
   }
-
+  .contact-links {
+      top:31rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -877,4 +885,7 @@ filter: none;
    top:-9rem;
    margin-bottom: 4rem;
   }
+  .contact-links {
+    top:27.5rem;
+}
 }
