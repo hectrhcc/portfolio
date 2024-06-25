@@ -1,8 +1,9 @@
 $(document).ready(function() {
 
-$('.saludo').typeIt();
 
-setTimeout(function() {
-$(".cv").fadeIn(1500);
-},6500);
+$('.menu-toggle').click(function(){
+    $(this).toggleClass('open');
+  });
 });
+
+
