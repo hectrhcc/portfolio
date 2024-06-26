@@ -33,21 +33,17 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+.contenedor-proyecto{
+  width:100%; 
+  border:1px solid red;
+  max-height: 20rem;
+}   
 .projects-section {
   text-align: center;
   padding: 7rem 2rem;
   background: whitesmoke;  
   color:#261250;
 }
-
-.projects-section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid #261250;
-  
-}
-
-
 
 .projects-grid {
   display: grid;
@@ -179,9 +175,9 @@ text-align: center;
 
     </style>
     </head>
-    <body>
+<main class="contendor-proyecto">
 <section class="projects-section">  
-<h2 class="projects-section-header">Algunos de mis trabajos</h2>
+<h2 class="text-black text-3xl mb-4">Trabajos</h2>
   <div class="projects-grid" >
   <a
   href="https://trackeripaddress.netlify.app/"
@@ -348,5 +344,6 @@ class="project project-title jobs-move"
   >Más trabajos<i class="fas fa-chevron-right"></i
 ></a>
 </section>
+</main>
 </body>
 </html>
