@@ -57,7 +57,12 @@ border-radius:4rem;
 	          background-size: cover;
 	          background-attachment:fixed; 
 	          background-position:center ;
-            overflow-y: hidden;
+            
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            height:77vh;
+            
         }
         .bienvenida{
           color:#fff;
@@ -66,7 +71,6 @@ border-radius:4rem;
           top:12rem;
         }
         .foto{
-            
             display: flex;
             justify-content: center;
         }
@@ -119,7 +123,14 @@ border-radius:4rem;
             max-width:65%;
             min-height:27rem;
         }
+        .fondo{
+          width:80%;
+        }
         @media(min-width:375px) and (max-width:767px){
+          .fondo{
+         
+          width:100%;
+        }
           .bienvenida{
             top:8rem;
           }
@@ -149,14 +160,10 @@ border-radius:4rem;
           top:5.5rem;
         }
         @media (min-width:768px){
-            .foto{
           
         }
-        }
         @media (min-width:1440px){
-            .foto{
             
-        }
         }
     </style>
 </head>
