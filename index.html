@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="./output.css" rel="stylesheet">
     <link
       rel="stylesheet"
@@ -59,18 +59,14 @@ border-radius:4rem;
             height:77vh;
             
         }
-        .bienvenida{
-          color:#fff;
-          text-align: center;
-          position: relative;
-          top:12rem;
-        }
+        
         .foto{
             display: flex;
             justify-content: center;
             z-index:-1;
         }
         .boton, .fa-chart-line, .fa-home, .fa-briefcase ,.fa-award  ,.fa-envelope{
+          
           transition: all .2s ease-out;
         }
         .boton:hover, .fa-chart-line:hover, .fa-home:hover, .fa-briefcase:hover ,.fa-award:hover  ,.fa-envelope:hover{
@@ -121,7 +117,7 @@ border-radius:4rem;
             border-bottom-right-radius:0.7rem ;
             background-color: #261250;
             overflow-y:auto;
-            overflow-x:hidden;
+           
             max-width:65%;
             min-height:27rem;
         }
@@ -199,30 +195,27 @@ border-radius:4rem;
                 </p>    
             </div>
             <did class="principal w-3/4  max-md:w-full max-md:block sm:w-full">
-                <main  id="main-content">
-                  <div class="bienvenida">
-                  <h1 class="text-4xl mb-2">Héctor Contreras</h1>
-                  <p class="mt-2 text-gray-400 text-sm" >Front-end Developer</p>
-                </div>
+                <main >
+                  <div id="contenido-dinamico"></div>
                 </main>
             </div>
             <div class="navegar rounded-lg  border ml-4 flex items-center justify-center ">
                 <ul class="nav-list">
                     <li>
-                      <a href="./inicio.html"><i class="fas fa-home w-8 relative left-2 "></i> </a>
+                      <a href="./inicio.html" class="cargar-contenido"><i class="fas fa-home w-8 relative left-2 "></i> </a>
                     </li>
                     <li>
-                      <a href="./proyectos.html"><i class="fas fa-briefcase w-8 relative left-2"></i> </a>
+                      <a href="./proyectos.html" class="cargar-contenido"><i class="fas fa-briefcase w-8 relative left-2"></i> </a>
                     </li>
                     <li>
-                      <a href="./certificados.html"><i class="fas fa-award w-8 relative left-2"></i></a>
+                      <a href="./certificados.html" class="cargar-contenido"><i class="fas fa-award w-8 relative left-2"></i></a>
                     </li>
                     <li>
-                      <a href="./experiencia.html"> <i class="fas fa-chart-line w-8 relative left-2"></i>
+                      <a href="./experiencia.html" class="cargar-contenido"> <i class="fas fa-chart-line w-8 relative left-2"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="./contacto.html"> <i class="fas fa-envelope w-8 relative left-2"></i>
+                        <a href="./contacto.html" class="cargar-contenido"> <i class="fas fa-envelope w-8 relative left-2"></i>
                           </a>
                       </li>
                   </ul>
