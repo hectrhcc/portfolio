@@ -42,7 +42,7 @@ html {
 }
 /* Estilo para la barra de desplazamiento en navegadores webkit (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
-width: 1.5rem; /* Ancho de la barra */
+width: 1rem; /* Ancho de la barra */
 }
 ::-webkit-scrollbar-track {
 background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
@@ -54,11 +54,23 @@ border-radius:4rem;
         body{
             background-color: #E6E6E6;
         }
+        .bienvenida{
+          color:#fff;
+          text-align: center;
+          position: relative;
+          top:8rem;
+        }
         .foto{
             position: relative;
             left:2.5rem;
         }
-     
+        .boton, .fa-chart-line{
+          transition: all .2s ease-out;
+        }
+        .boton:hover, .fa-chart-line:hover, .fa-home:hover, .fa-briefcase:hover ,.fa-award:hover  ,.fa-envelope:hover{
+          transform: scale(1.2);
+          
+        }
         .cv{
         margin: 0 auto;
         background-color:#261250;
@@ -112,6 +124,7 @@ border-radius:4rem;
             border-top-left-radius: 0rem;
             border-bottom-right-radius: 0.7rem;
             border-bottom-left-radius: 0.7rem;
+            min-height:18rem;
           }
         }
 
@@ -139,19 +152,19 @@ border-radius:4rem;
                <p class="text-red-600 text-sm">Front-end Developer</p>
             </div>
                <div class="block mt-2 mb-2 text-center w-full relative  flex-nowrap">
-                <a class="btn"
+                <a
                 href="https://www.linkedin.com/in/hector-contreras-corvacho/" 
-                target="_blank"> <img src="linkedin-logo-black-circle-15920.png" class="inline w-8 mr-2"></a>
+                target="_blank"> <img src="linkedin-logo-black-circle-15920.png" class="inline w-8 mr-2 boton" >  </a>
                 <a  
                   href="https://github.com/hectrhcc"
                   target="_blank"
-                  class="btn"
-                  > <img src="github-round-border.png" class="inline w-8 mr-2"></a></a>
-                <a href="mailto:hcontrerascorvacho@gmail.com"  class="text-shadow-xs transition-transform duration-300 ease-out hover:transform translateY-8"> 
-                  <img src="email.png" class="inline w-8 mr-2 "></a> </a
+                
+                  > <img src="github-round-border.png" class="inline w-8 mr-2 boton"></a></a>
+                <a href="mailto:hcontrerascorvacho@gmail.com"  > 
+                  <img src="email.png" class="inline w-8 mr-2 boton"></a> </a
                 >
-                <a href="https://wa.me/56967689934"  class="btn "> 
-                  <img src="mensajero.png" class="inline w-8 "></a>
+                <a href="https://wa.me/56967689934"  > 
+                  <img src="mensajero.png" class="inline w-8 boton"></a>
                 </a>
               </div>  
               <p class="cv text-center mb-4 mt-2" >
@@ -159,7 +172,12 @@ border-radius:4rem;
                 </p>    
             </div>
             <did class="principal w-3/4  max-md:w-full max-md:block sm:w-full">
-                <main  id="main-content"></main>
+                <main  id="main-content">
+                  <div class="bienvenida">
+                  <h1 class="text-4xl mb-2">Héctor Contreras</h1>
+                  <p class="mt-2 text-gray-400 text-sm" >Front-end Developer</p>
+                </div>
+                </main>
             </div>
             <div class="navegar rounded-lg  border ml-4 flex items-center justify-center ">
                 <ul class="nav-list">
