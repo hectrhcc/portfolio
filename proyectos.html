@@ -26,10 +26,6 @@
 
 html {
   box-sizing: border-box; 
-  /*
-   *  font size = 16px, 1rem = 16px, 100% = 16px
-   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-  */
   scroll-behavior: smooth;
 }
 .contenedor-proyecto{
@@ -48,6 +44,7 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
   width: 100%;
+  
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 5rem;
@@ -89,7 +86,6 @@ html {
   margin-left:0.5rem;
 }
 
-
 .project {
   background:#eeeeee;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -98,13 +94,9 @@ html {
   transition: transform 0.3s ease-out;
 
 }
-
-.project:hover{
-  
+.project:hover{ 
   transform: translateY(-12px);
 }
-
-
 
 .code {
   color:#45567d;
@@ -169,13 +161,12 @@ text-align: center;
   transform: translateX(0);
   transition: transform 0.3s ease-out;
 }
- 
 
     </style>
     </head>
 <main class="contenedor-proyecto">
 <section class="projects-section">  
-<h2 class="text-black text-3xl mb-4">Trabajos</h2>
+
   <div class="projects-grid" >
   <a
   href="https://trackeripaddress.netlify.app/"

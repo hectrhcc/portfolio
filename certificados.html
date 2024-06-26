@@ -14,14 +14,98 @@
     <link rel="icon" type="image/png" href="./icono.png">
     <title>Portafolio Héctor Contreras | Desarrollador Web</title>
     <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
-        
+html {
+  box-sizing: border-box; 
+  scroll-behavior: smooth;
+}
+            main{
+                background-color:#fff;   
+            }
+            .certification-section {
+text-align: center;
+padding: 7rem 2rem;
+background:rgb(26, 24, 62);
+font-size: 62.5%;
+}
+
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 2fr));
+  grid-gap:0.5rem;
+  width:100%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+
+.project2 {
+  background:#3e2476;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  border: 3px solid #111;
+  width:95%;
+  max-height:100%;
+}
+
+.project2:hover{
+  background-color:#6942BB;
+  transform: translateY(-12px); 
+}
+
+.project-title2{
+font-size:small;
+padding: 1.5rem 0.3rem 0.1rem 0.3rem;
+border-radius: 10px;
+color:beige;
+
+}
+
+.code2{
+color: #45567d;
+transition: color 0.3s ease-out;
+}
+
+.project2:hover .code2 {
+color: #ff7f50;
+}
+.project2:hover .skills2 {
+  color: #d3d2d2 ;
+}
+
+.project-image {
+  height: calc(100% - 4.8rem);
+  width: 100%;
+  object-fit: cover;    
+} 
+
+.skills2{
+color: #888;
+font-size: xx-small;
+display: block;
+text-align: center;
+}
+.code2{
+color:#45567d;
+transition: color 0.3s ease-out;
+}
     </style>
 </head>
 <body>
+<main>
 <section  class="certification-section">
-    <h2 class="certification-section-header">Certificados</h2>
-<div class="projects-grid" id="certs-move">
+<div class="projects-grid" >
   <a
 href="https://www.hackerrank.com/certificates/e82ca41552dd"
 target="_blank"
@@ -34,7 +118,7 @@ alt="certificado Frontend Developer (React)"
 />
 <p class="project-title2">
 <span class="code2">&lt;</span>
-Frontend Delover React
+Frontend Developer React
 <span class="code2">&#47;&gt;</span>
 <span class="skills2">HackerRank</span>
 </p>
@@ -177,5 +261,6 @@ Scrum
 </a>
   </div>
 </section>
+</main>
 </body>
 </html>

@@ -39,6 +39,7 @@ html {
    * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
   */
   scroll-behavior: smooth;
+  min-height: 100%
 }
 /* Estilo para la barra de desplazamiento en navegadores webkit (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
@@ -59,6 +60,7 @@ border-radius:4rem;
             height:77vh;
             overflow-y: hidden;
             overflow-x: hidden;
+            min-height: 100%
           
         }
         
@@ -110,7 +112,8 @@ border-radius:4rem;
             border-bottom-left-radius:0.7rem;
             padding-top: 3rem;
             padding-bottom: 3rem;
-            
+            transition: opacity 0.3s ease; 
+          
         }
         .principal{
             box-shadow: 3px 0 3px rgba(0,0,0,1);
@@ -142,14 +145,15 @@ border-radius:4rem;
             top:8rem;
           }
           .perfil{
-            
+  
             box-shadow: 0 -3px 6px rgba(0,0,0,0.5);
             border-top-left-radius: 0.7rem;
             border-top-right-radius: 0.7rem;
             border-bottom-left-radius:0rem ;
             border-bottom-right-radius:0rem;
             
-        }
+          }
+          
           .principal{
             max-width:91.7% ;
             margin: 0 auto;
@@ -204,7 +208,8 @@ border-radius:4rem;
                 </p>    
             </div>
             <div class="principal w-3/4  max-md:w-full max-md:block sm:w-full">
-             <div id="contenido-dinamico"></div>
+             <div id="contenido-dinamico">
+             </div>
             </div>
             <div class="navegar rounded-lg  border ml-4 flex items-center justify-center ">
                 <ul class="nav-list">
