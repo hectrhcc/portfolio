@@ -1,519 +1,192 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="estilo.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link href="./output.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- los tag script deben estar cerrados-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.typeit/3.0.1/typeit.min.js"></script>
     <link rel="icon" type="image/png" href="./icono.png">
     <title>Portafolio Héctor Contreras | Desarrollador Web</title>
-  </head>
-  <body>
-    <section id="inicio" class="welcome-section">
-      <div class="navmovil">
-        <div class="menu-toggle first">
-          <i></i>
-          </div>
-        </div>
-      <nav id="navbar" class="nav">
-        <ul class="nav-list">
-          <li>
-            <a href="#inicio"><i class="fas fa-home"></i> Inicio</a>
-          </li>
-          <li>
-            <a href="#trabajos"><i class="fas fa-briefcase"></i> Trabajos</a>
-          </li>
-          <li>
-            <a href="#certificados"><i class="fas fa-award"></i> Certificados</a>
-          </li>
-          <li>
-            <a href="#experiencia"> <i class="fas fa-chart-line"></i>
-               Experiencia</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- FIN NAV -->
-      <!-- INICIO SECCION BIENVENIDA-->
-      <div class="intro">
-           <img src="hhcc.png" alt="foto-perfil" class="profile">
-           <p>Hola, Soy Héctor</p>
-          <p>Front end Developer</p>
-          <p class="cv" >
-            <a href="cv.pdf" download class="download"><i class="fas fa-download icono-descarga"></i> Descargar CV</a>
-            </p>
-          
-      </div>
-      <div class="contact-links">
-        <a class="btn contact-details" 
-        href="https://www.linkedin.com/in/hector-contreras-corvacho/" 
-        target="_blank"> <img src="linkedin-logo-black-circle-15920.png" class="icon"></a>
-        <a
-          id="profile-link"
-          href="https://github.com/hectrhcc"
-          target="_blank"
-          class="btn contact-details"
-          > <img src="github-round-border.png" class="icon"></a></a>
-        <a href="mailto:hcontrerascorvacho@gmail.com" class="btn contact-details"> 
-          <img src="email.png" class="icon2"></a> </a
-        >
-        <a href="https://wa.me/56967689934"  class="btn contact-details"> 
-          <img src="mensajero.png" class="icon2"></a>
-        </a>
-      </div>  
-       
-      
-   
+    <style>
+        :root {
+  --main-white: #f0f0f0;
+  --main-nav: #261250;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #39424E;
+  --main-purple: #6942BB;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
+html {
+  box-sizing: border-box; 
+  /*
+   *  font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  scroll-behavior: smooth;
+}
+/* Estilo para la barra de desplazamiento en navegadores webkit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+width: 1.5rem; /* Ancho de la barra */
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+::-webkit-scrollbar-thumb {
+background: linear-gradient(transparent,#261250 );
+border-radius:4rem;
+}
+        body{
+            background-color: #E6E6E6;
+        }
+        .foto{
+            position: relative;
+            left:2.5rem;
+        }
+     
+        .cv{
+        margin: 0 auto;
+        background-color:#261250;
+        border-radius:0.7rem;
+        font-size:small;
+        width: 8.5rem;
+        padding: 0.5rem 0.5rem;
+        border:0.2rem solid black;
+        transition: all .2s ease-out;
+        color: #fff;
+        }
 
-    </section>
-    <section id="trabajos" class="projects-section">
-        <h2 class="projects-section-header">Algunos de mis trabajos</h2>
-  
-        <div class="projects-grid" >
-          <a
-          href="https://trackeripaddress.netlify.app/"
-          target="_blank"
-          class="project project-title jobs-move"
-        >
-        <div class="bolitas"><div class="bolita"><br/></div>
-        <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
-          <img
-            class="project-image"
-            src="trackerip.png"
-            alt="Sitio oficial de la consultora Zona Fótica"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Tracker IP
-            <span class="code">&#47;&gt;</span>
-            <span class="skills">React &#9702; Tailwind &#9702; API &#9702; Leaftlet</span>
-          </p>
-        </a>
-          <a
-            href="https://zonafotica.vercel.app/"
-            target="_blank"
-            class="project project-title jobs-move"
-          >
-          <div class="bolitas"><div class="bolita"><br/></div>
-          <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
-            <img
-              class="project-image"
-              src="zonafotica.png"
-              alt="Sitio oficial de la consultora Zona Fótica"
-            />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Zona Fótica 
-              <span class="code">&#47;&gt;</span>
-              <span class="skills">Vanilla JS &#9702; Responsive Design</span>
-            </p>
-          </a>
-          <a href="https://agricola-del-norte.vercel.app/" target="_blank" class="project project-title jobs-move" ">
-            <div class="bolitas"><div class="bolita"><br/></div>
-            <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>  
-            <img class="project-image" src="agricola2.png"   alt="Sitio Agricola del Norte S.A." >
-              <p class="project-title" >
-                  <span class="code">&lt;</span>
-                  Agrícola del Norte
-                  <span class="code">&#47;&gt;</span>
-                  <span class="skills">TailwindCSS   &#9702; Javascript  &#9702; RWD</span>
-              </p>
-          </a>
-          <a
-          href="https://markdown-previewer-dusky-three.vercel.app/ "
-          target="_blank"
-          class="project project-title jobs-move"
-        >
-        <div class="bolitas"><div class="bolita"><br/></div>
-        <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
-          <img
-            class="project-image"
-            src="markdown.png"
-            alt="projecto previsualizador de lenguaje de marcado"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Markdown Previewer
-            <span class="code">&#47;&gt;</span>
-            <span class="skills">React  &#9702; Marked.js   &#9702; Vite </span>
-          </p>
-        </a>
-        <a
-        href="https://proyecto-inzpirate.vercel.app/"
-        target="_blank"
-        class="project project-title jobs-move"
-      >
-      <div class="bolitas"><div class="bolita"><br/></div>
-      <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
-        <img
-          class="project-image"
-          src="inzp.png"
-          alt="projecto Inzpirate de la fundacion Construyendo servidores para usted "
-        />
-        <p class="project-title">
-          <span class="code">&lt;</span>
-          Proyecto Inzpirate
-          <span class="code">&#47;&gt;</span>
-          <span class="skills"> CSS &#9702; JS  &#9702; Responsive Design</span>
-        </p>
-      </a>
-          <a
-            href="https://aricamascotas.netlify.app/"
-            target="_blank"
-            class="project project-title jobs-move"
-          >
-          <div class="bolitas"><div class="bolita"><br/></div>
-          <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
-            <img
-              class="project-image"
-              src="mascotas.png"
-              alt="projecto portal de mascotas"
-            />
-            <p class="project-title">
-              <span class="code">&lt;</span>
-              Portal Mascotas 
-              <span class="code">&#47;&gt;</span>
-              <span class="skills">HTML  &#9702; CSS  &#9702; Javascript ES6</span>
-            </p>
-          </a> 
-        <a href="https://base-apparel-coming-soon-vert.vercel.app/" target="_blank" class="project project-title jobs-move" >
-          <div class="bolitas"><div class="bolita"><br/></div>
-          <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>  
-          <img class="project-image" src="she.jpg" alt="section with dropdown navigation" >
-            <p class="project-title" >
-                <span class="code">&lt;</span>
-                Base Apparel
-                <span class="code">&#47;&gt;</span>
-                <span class="skills">TailWind  &#9702;JS   &#9702; Responsive Design</span>
-            </p>
-        </a>
-        <a
-        href="https://mobile-first-dashboard.vercel.app/"
-        target="_blank"
-        class="project project-title jobs-move"
-      >
-      <div class="bolitas"><div class="bolita"><br/></div>
-      <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
-        <img
-          class="project-image"
-          src="dashboard.png"
-          alt="proyecto tablero de control"
-        />
-        <p class="project-title">
-          <span class="code">&lt;</span>
-          Dashboard 
-          <span class="code">&#47;&gt;</span>
-          <span class="skills">React Hooks &#9702; Vite  &#9702; RWD</span>
-        </p>
-      </a>
-          <a
-          href="https://intro-section-with-dropdown-navigation-main-silk.vercel.app/"
-          target="_blank"
-          class="project project-title jobs-move"
-        >
-        <div class="bolitas"><div class="bolita"><br/></div>
-        <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
-          <img
-            class="project-image"
-            src="snap.png"
-            alt="Videojuego los nueve talentos"
-          />
-          <p class="project-title">
-            <span class="code">&lt;</span>
-            Dropdown navigation
-            <span class="code">&#47;&gt;</span>
-            <span class="skills">  HTML   &#9702; JS  &#9702; Responsive Design</span>
-          </p>
-        </a>
-       
-  </div>
-        <a
-          href="https://github.com/hectrhcc?tab=repositories"
-          class="btn btn-show-all"
-          target="_blank"
-          id="vermas"
-          >Más trabajos<i class="fas fa-chevron-right"></i
-        ></a>
-      </section>
-      <!-- FIN SECCIÓN PROYECTOS -->
-  <!-- INICIO SECCIÓN CERTIFICADOS-->
-  <section id="certificados" class="certification-section">
-    <h2 class="certification-section-header">Certificados</h2>
-    <div class="projects-grid" id="certs-move">
-      <a
-  href="https://www.hackerrank.com/certificates/e82ca41552dd"
-  target="_blank"
-  class="project2 project-title2"
-  >
-  <img
-    class="project-image"
-    src="frontend.png"
-    alt="certificado Frontend Developer (React)"
-  />
-  <p class="project-title2">
-    <span class="code2">&lt;</span>
-    Frontend Delover React
-    <span class="code2">&#47;&gt;</span>
-    <span class="skills2">HackerRank</span>
-  </p>
-  </a>
-  <a
-  href="https://www.hackerrank.com/certificates/dcc36aae08ff"
-  target="_blank"
-  class="project2 project-title2"
-  >
-  <img
-    class="project-image"
-    src="cert9.png"
-    alt="Certificado Javascript nivel Intermedio"
-  />
-  <p class="project-title2">
-    <span class="code2">&lt;</span>
-    Javascript Intermedio
-    <span class="code2">&#47;&gt;</span>
-    <span class="skills2">HackerRank</span>
-  </p>
-  </a>
-  <a
-  href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1034444"
-  target="_blank"
-  class="project2 project-title2"
-  >
-  <img
-    class="project-image"
-    src="Scrumcert.png"
-    alt="Certificado de Scrum Fundamentals  Certified 4th Edition"
-  />
-  <p class="project-title2">
-    <span class="code2">&lt;</span>
-    Scrum Fundamentals
-    <span class="code2">&#47;&gt;</span>
-    <span class="skills2">Scrumstudy</span>
-  </p>
-  </a>
-      <a
-      href="https://www.hackerrank.com/certificates/34db0b59c080"
-      target="_blank"
-      class="project2 project-title2"
-    >
-      <img
-        class="project-image"
-        src="cert0.png"
-        alt="certificado react basic"
-      />
-      <p class="project-title2">
-        <span class="code2">&lt;</span>
-         React 
-        <span class="code2">&#47;&gt;</span>
-        <span class="skills2">HackerRank</span>
-      </p>
-    </a>
-  <a
-    href="https://www.udemy.com/certificate/UC-24c03b93-890d-4821-9fad-e31adda9d6ae/"
-    target="_blank"
-    class="project2 project-title2"
-  >
-    <img
-      class="project-image"
-      src="cert3.png"
-      alt="certificado de React"
-    />
-    <p class="project-title2">
-      <span class="code2">&lt;</span>
-      React
-      <span class="code2">&#47;&gt;</span>
-      <span class="skills2">Udemy</span>
-    </p>
-  </a>
-  <a
-  href="https://www.freecodecamp.org/espanol/certification/hectrhcc/front-end-development-libraries"
-  target="_blank"
-  class="project2 project-title2"
-  >
-  <img
-    class="project-image"
-    src="cert8.png"
-    alt="certificado Librerías de desarrollo Front-end"
-  />
-  <p class="project-title2">
-    <span class="code2">&lt;</span>
-    Liberías de desarrollo
-    <span class="code2">&#47;&gt;</span>
-    <span class="skills2">FreeCodeCamp</span>
-  </p>
-  </a>
-  <a
-  href="https://www.freecodecamp.org/espanol/certification/hectrhcc/responsive-web-design"
-  target="_blank"
-  class="project2 project-title2"
-  >
-  <img
-    class="project-image"
-    src="cert2.png"
-    alt="certificado responsive design"
-  />
-  <p class="project-title2">
-    <span class="code2">&lt;</span>
-     Responsive Design
-    <span class="code2">&#47;&gt;</span>
-    <span class="skills2">FreeCodeCamp</span>
-  </p>
-  </a>
-  <a
-    href="https://www.hackerrank.com/certificates/9002cdc6a3e2"
-    target="_blank"
-    class="project2 project-title2"
-  >
-    <img
-      class="project-image"
-      src="cert7.png"
-      alt="certificado de Javascript nivel básico"
-    />
-    <p class="project-title2">
-      <span class="code2">&lt;</span>
-      Javascript Básico
-      <span class="code2">&#47;&gt;</span>
-      <span class="skills2">HackerRank</span>
-    </p>
-  </a>
-  
-  
-  
-  <a
-  href="https://drive.google.com/file/d/1McWOlKuN6Knamvpas8TKP7A4n6K3oZMI/view?usp=sharing"
-  target="_blank"
-  class="project2 project-title2"
-  >
-  <img
-    class="project-image"
-    src="cert10.png"
-    alt="Certificado de presencia en el curso Scrum Fundamentals  Certified 4th Edition"
-  />
-  <p class="project-title2">
-    <span class="code2">&lt;</span>
-    Scrum
-    <span class="code2">&#47;&gt;</span>
-    <span class="skills2">soylíder.net</span>
-  </p>
-  </a>
-      </div>
-  </section >
-  <!-- FIN SECCIÓN CERTIFICADOS-->
-  <!-- INICIO SECCIÓN EXPERIENCIA -->
-  <section id="experiencia"> 
-    <h2 class="exp" >Experiencia</h4>
-  <div class="experiencia">
-  <div class="contenedor1">  
-      <div class="forma">
-        <div>
-          <div class="tiempo">
-          <h4 class="año">2024</h4>
-            <p class="empresa">Agrícola del Norte S.A</p>
-            <p class="parrafo-oculto">Desarrollo de un sitio web para Agrícola del Norte S.A., una empresa con sede en Arica, dedicada a la venta local de recursos agrícolas. El enfoque principal del proyecto fue crear una plataforma web dinámica y fácil de usar.</p>
-          </div>
-        <div >
-          <h4 class="año">2024</h4>
-            <p class="empresa">Consultora Zona Fótica</p>
-            <p class="parrafo-oculto">Desarrollo de una plataforma de información para Zona Fótica con el propósito de ser expuesta en la feria Aquasur, representando a Zona Fótica como consultora en el campo de la acuicultura.</p>
-        </div>
-        <div >
-          <h4 class="año">2023</h4>
-            <p class="empresa">Fundación Construyendo</p>
-          </div>
-        </div>
-      <div>
-          <ul class="ul">
-           <div class="postcirculito"><div class="circulito"></div></div>
-            <li class="li"> 
-            <h4 class="titulo">Desarrollador front-end</h4>
-              <p class="parrafo">Desarrollo de un sitio web para Agrícola del Norte S.A., una empresa con sede en Arica, dedicada a la venta local de recursos agrícolas. El enfoque principal del proyecto fue crear una plataforma web dinámica y fácil de usar.</p>
-            </li>
-            <div class="postcirculito"><div class="circulito"></div></div>
-          <li class="li">
-            <h4 class="titulo">Desarrollador front-end</h4>
-            <p class="parrafo">Desarrollo de una plataforma de información para Zona Fótica con el propósito de ser expuesta en la feria Aquasur, representando a Zona Fótica como consultora en el campo de la acuicultura.</p></li>
-              <div class="postcirculito"><div class="circulito"></div></div>
-          <li class="li">
-            <h4 class="titulo">Desarrollador Web</h4>
-            <p class="parrafo">Desarrollar una plataforma de información sobre clubes de adulto mayor en las comunas de
-              Arica,Camarones y Putre. Ordenar, monitorear y controlar el acceso de información a la plataforma,
-              velando por el buen uso y control de acceso a esta.</p>
-          </li>
-          </ul>
-    
-            
-          </div>
-       </div>
-  </div>
-  <div class="contenedor2">
-    <h4 class="habilidades">Habilidades de código</h4>
-    <div class="habilidad">
-    <span class="lenguaje">HTML/CSS&nbsp;&nbsp;&nbsp;</span><span class="percent">97%</span>
-    <div class="barrita1"><div class="barrita-html"></div></div>
-  </div>
-  <div class="habilidad">
-    <span class="lenguaje">Javascript&nbsp;&nbsp;&nbsp;</span><span class="percent">85%</span>
-    <div class="barrita1"><div class="barrita-js"></div></div>
-  </div>
-  <div class="habilidad">
-    <span class="lenguaje">TailwindCSS</span><span class="percent">80%</span>
-    <div class="barrita1"><div class="barrita-tail"></div></div>
-  </div>
-  <div class="habilidad">
-    <span class="lenguaje">React.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="percent"> 75%</span>
-    <div class="barrita1"><div class="barrita-react"></div></div>
-  </div>
-  </div>
-  </div>
-    <!-- FIN SECCIÓN CERTIFICADOS-->
-  </section >
-  <section class="herramientas">
-    <div class="marquee">
-      <div class="marquee--inner">
-        <span class="span1">
-          <a href="https://html.spec.whatwg.org/multipage/" target="_blank"><img src="html.png" class="orb"/></a>
-          <a href="https://www.w3.org/Style/CSS/"  target="_blank"><img src="css.png" class="orb"/></a>
-          <a href="https://262.ecma-international.org/"  target="_blank"><img src="js.png" class="orb"/></a>
-          <a href="https://jquery.com/"  target="_blank"><img src="jquery.png" class="orb"/></a>
-          <a href="https://es.react.dev/" target="_blank"><img src="react.png" class="orb"/></a>
-          <a href="https://nextjs.org/"  target="_blank"><img src="nextjs.png" class="orb"/></a>
-          <a href="https://tailwindcss.com/"  target="_blank"><img src="tailwind.png" class="orb"/></a>
-          <a href="https://git-scm.com/"  target="_blank"><img src="git.png" class="orb"/></a>
-          <a href="https://code.visualstudio.com/"  target="_blank"><img src="vscode.png" class="orb"/></a>
-          <a href="https://vitejs.dev/"  target="_blank"><img src="vite.png" class="orb"/></a>
-        </span>
-      </div>
+        .cv:hover{
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        
+        border:0.2rem solid black;
+        transform: scale(1.1);
+        }
+        .navegar{
+            background-color: #fff;
+            height: 10rem;
+            position: relative;
+            top:5rem;
+            box-shadow: 0 0 6px rgba(0,0,0,.5);
+        }
+        .perfil{
+            box-shadow: 0 0 6px rgba(0,0,0,0.5);
+            border-top-left-radius: 0.7rem;
+            border-bottom-left-radius:0.7rem ;
+        }
+        .principal{
+            border-top-right-radius: 0.7rem;
+            border-bottom-right-radius:0.7rem ;
+            background-color: #261250;
+            overflow-y:auto;
+            overflow-x:hidden;
+        }
+        @media(min-width:375px){
+          .perfil{
+            box-shadow: 0 -3px 6px rgba(0,0,0,0.5);
+            border-top-left-radius: 0.7rem;
+            border-top-right-radius: 0.7rem;
+            border-bottom-left-radius:0rem ;
+            border-bottom-right-radius:0rem ;
+        }
+          .principal{
+            max-width:91.7% ;
+            margin: 0 auto;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.5); 
+            border-top-right-radius: 0rem;
+            border-top-left-radius: 0rem;
+            border-bottom-right-radius: 0.7rem;
+            border-bottom-left-radius: 0.7rem;
+          }
+        }
+
+        @media (min-width:768px){
+            .foto{
+            position: relative;
+            left:2.9rem;
+        }
+        }
+        @media (min-width:1440px){
+            .foto{
+            position: relative;
+            left:4.5rem;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class=" flex flex-row justify-center p-8 m-3 max-md:m-0 sm:m-0">
+        <div class="flex flex-row  max-md:flex-col w-3/4 max-md:w-11/12 sm:w-11/12">
+            <div class="perfil bg-white  p-2  w-1/4 max-md:w-11/12 max-md:block  max-md:mx-auto  sm:w-2/3 lg:w-1/3">
+                <img src="hhcc.png"     alt="foto-perfil" class="foto inline w-40 ">
+                <div class="text-center font-semibold">
+                <p class="text-lg">Héctor Contreras</p>
+               <p class="text-red-600 text-sm">Front-end Developer</p>
+            </div>
+               <div class="block mt-2 mb-2 text-center w-full relative  flex-nowrap">
+                <a class="btn"
+                href="https://www.linkedin.com/in/hector-contreras-corvacho/" 
+                target="_blank"> <img src="linkedin-logo-black-circle-15920.png" class="inline w-8 mr-2"></a>
+                <a  
+                  href="https://github.com/hectrhcc"
+                  target="_blank"
+                  class="btn"
+                  > <img src="github-round-border.png" class="inline w-8 mr-2"></a></a>
+                <a href="mailto:hcontrerascorvacho@gmail.com"  class="text-shadow-xs transition-transform duration-300 ease-out hover:transform translateY-8"> 
+                  <img src="email.png" class="inline w-8 mr-2 "></a> </a
+                >
+                <a href="https://wa.me/56967689934"  class="btn "> 
+                  <img src="mensajero.png" class="inline w-8 "></a>
+                </a>
+              </div>  
+              <p class="cv text-center mb-4 mt-2" >
+                <a href="cv.pdf" download class=""><i class="fas fa-download icono-descarga "></i> Descargar cv</a>
+                </p>    
+            </div>
+            <did class="principal w-3/4  max-md:w-full max-md:block sm:w-full">
+                <main  id="main-content"></main>
+            </div>
+            <div class="navegar rounded-lg  border ml-4 flex items-center justify-center ">
+                <ul class="nav-list">
+                    <li>
+                      <a href="./inicio.html"><i class="fas fa-home w-8 relative left-2 "></i> </a>
+                    </li>
+                    <li>
+                      <a href="./proyectos.html"><i class="fas fa-briefcase w-8 relative left-2"></i> </a>
+                    </li>
+                    <li>
+                      <a href="./certificados.html"><i class="fas fa-award w-8 relative left-2"></i></a>
+                    </li>
+                    <li>
+                      <a href="./experiencia.html"> <i class="fas fa-chart-line w-8 relative left-2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html"> <i class="fas fa-envelope w-8 relative left-2"></i>
+                          </a>
+                      </li>
+                  </ul>
+            </div>
+        </div>      
+        
+        
+
     </div>
-  </section>
-      <!-- INICIO SECCIÓN FOOTER  -->
-      <footer>
-      
-          <p>
-            **Todos los proyectos y detalles de contacto proporcionados son reales.
-          </p>
-          <p>  
-            <a href="https://github.com/hectrhcc" target="_blank">Héctor Contreras</a>
-            &copy; 2024.
-          </p> 
-         
-        
-        
-      </footer>
-      <!-- FIN SECCIÓN FOOTER  -->
     <script src="js.js"></script>
-    </body>
-  </html>
+</body>
+</html>

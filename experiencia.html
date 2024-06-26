@@ -1,0 +1,305 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap">
+    <link href="./output.css" rel="stylesheet">
+<title>Experiencia</title>
+</head>
+<style>
+
+    main{
+        background-color:#fff;
+        color:#000;
+    }
+    .exp{
+    color:#111;
+    max-width: 640px;
+    margin: 7rem auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-nav);
+    }
+    .experiencia{
+     display: flex;
+    flex-direction:column;
+    gap:5rem;
+    text-align: center;
+    align-items: center;
+    color:#111;
+    justify-content: center;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width: 100%;
+    height:20rem;
+    }
+    .contenedor1{
+     min-width:8rem ;
+     position: relative;
+    right:21rem;
+    top:-1rem;
+    
+    }
+    .contenedor2{
+    position: relative;
+    left:15rem;
+    top:20.4rem;
+    max-width:90%;
+    
+    }
+    .habilidades{
+     display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    
+    }
+    .habilidad{
+    margin-bottom:1rem;
+    }
+    .lenguaje{
+      font-size:small;
+    font-weight: bold;
+    color: #111;
+    display: inline;
+    text-align: left;
+    margin-right:10rem;
+    }
+    .percent{
+     font-size: x-small;
+    color: #333;
+    display: inline;
+    margin-left:5rem;
+    }
+    .barrita1{
+    border: 1px solid cadetblue;
+    padding: 0.2rem;
+    border-radius:3rem;
+    width: 100%;
+    }
+    .barrita-html{
+     display: inherit;
+    height: auto;
+    width: 97%;
+    padding:0.12rem ;
+    background-color: rgb(64, 64, 221);
+    }
+    .barrita-js{
+    display: inherit;
+    height: auto;
+    width: 85%;
+    padding:0.12rem ;
+    background-color: rgb(64, 64, 221);
+    }
+    .barrita-tail{
+    display: inherit;
+    height: auto;
+    width:80%;
+    padding:0.12rem ;
+    background-color: rgb(64, 64, 221);
+    }
+    .barrita-react{
+    display: inherit;
+    height: auto;
+    width: 75%;
+    padding:0.17rem ;
+    background-color: rgb(64, 64, 221);
+    }
+    .forma{
+     padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+    text-align: center;
+    align-items:start;
+    color:#111;
+    width:50%;
+    position: relative;
+    left:18rem;
+    }
+    .tiempo{
+    position: relative;
+    padding:0;
+    margin: 0;
+    }
+    .año{
+     font-size: small;
+    margin-bottom: 1.5rem;
+    text-align: right;
+    position: relative;
+    }
+    .empresa{
+     color: #888;
+    font-size: x-small;
+    text-align: right;
+    position: relative;
+    bottom: 0.5rem;
+    }
+    .parrafo-oculto{
+    visibility: hidden;
+    font-size: x-small;
+    text-align: justify;
+    width: min(150%, 20rem); /* Ancho mínimo deseado en rem */
+    position: relative;
+    bottom:1rem;
+    left:1rem;
+    padding-bottom:0.5rem;
+    margin: 0;
+    }
+    .ul{
+     border-left:1px solid #888;
+    margin-inline-start: 1rem;
+    }
+    .postcirculito{
+     background-color: rgb(109, 200, 203);
+    width:1.3rem;
+    height:1.3rem;
+    position: relative;
+    right:0.7rem;
+    top:0rem;
+    border-radius:3rem;
+    }
+    .circulito{
+    border:1px solid blue;
+    padding: 0.3rem;
+    width:0.5rem;
+    height: auto;
+    border-radius:3rem;
+    position: relative;
+    left:0.25rem;
+    top:0.2rem;
+    background-color: #fff;
+    }
+    .li{
+     padding-left: 2rem;
+    position: relative;
+    bottom:1rem;        
+    padding-bottom: 1rem;
+    }
+    .parrafo{
+     font-size: x-small;
+    color:#565555;
+    text-align:justify;  
+    width: min(150%, 20rem); /* Ancho mínimo deseado en rem */
+    }
+    .titulo{
+     font-size: small;
+    margin-bottom: 1.2rem;
+    text-align: left;
+    position: relative;    
+    bottom:0.5rem;
+    color:rgb(25, 25, 122);
+    }
+    .eltitulo{
+        font-size: x-large;
+        color: #000;
+
+        text-align: center;
+        position:static;
+        top:6rem;
+        font-weight: 600;
+        
+    }
+    @media (min-width:375px) and (max-width:767px){
+        body{
+            width: inherit;
+        }
+        .experiencia{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .contenedor1{
+            position: relative;
+            top:18rem;
+            left:-18rem;
+            
+        }
+        .contenedor2{
+            position: relative;
+            left:0rem;
+            /*top:4rem;desaparece*/
+            width:100%;
+            margin-top: 14rem;
+        }
+        .eltitulo{
+            position: relative;
+            left:20rem;
+            top:0rem;
+        }
+        }
+    @media (min-width:768px){
+           
+        }
+</style>
+<body>
+    <main>
+            <div class="experiencia">
+            <div class="contenedor2">      
+              
+              <div class="habilidad">
+                <h4 class="habilidades text-black text-center font-semibold">Habilidades de código</h4>
+              <span class="lenguaje">HTML/CSS&nbsp;&nbsp;&nbsp;</span><span class="percent">97%</span>
+              <div class="barrita1"><div class="barrita-html"></div></div>
+            </div>
+            <div class="habilidad">
+              <span class="lenguaje">Javascript&nbsp;&nbsp;&nbsp;</span><span class="percent">85%</span>
+              <div class="barrita1"><div class="barrita-js"></div></div>
+            </div>
+            <div class="habilidad">
+              <span class="lenguaje">TailwindCSS</span><span class="percent">80%</span>
+              <div class="barrita1"><div class="barrita-tail"></div></div>
+            </div>
+            <div class="habilidad">
+              <span class="lenguaje">React.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="percent"> 75%</span>
+              <div class="barrita1"><div class="barrita-react"></div></div>
+            </div>
+            </div>
+            <div class="contenedor1">  
+                <h1 class="eltitulo font-semibold text-xl mx-auto relative right-4">Experiencia</h1>
+              <div class="forma">
+                <div>
+                  <div class="tiempo">
+                  <h4 class="año">2024</h4>
+                    <p class="empresa">Agrícola del Norte S.A</p>
+                    <p class="parrafo-oculto">Desarrollo de un sitio web para Agrícola del Norte S.A., una empresa con sede en Arica, dedicada a la venta local de recursos agrícolas. El enfoque principal del proyecto fue crear una plataforma web dinámica y fácil de usar.</p>
+                  </div>
+                <div >
+                  <h4 class="año">2024</h4>
+                    <p class="empresa">Consultora Zona Fótica</p>
+                    <p class="parrafo-oculto">Desarrollo de una plataforma de información para Zona Fótica con el propósito de ser expuesta en la feria Aquasur, representando a Zona Fótica como consultora en el campo de la acuicultura.</p>
+                </div>
+                <div >
+                  <h4 class="año">2023</h4>
+                    <p class="empresa">Fundación Construyendo</p>
+                  </div>
+                </div>
+              <div>
+                  <ul class="ul">
+                   <div class="postcirculito"><div class="circulito"></div></div>
+                    <li class="li"> 
+                    <h4 class="titulo">Desarrollador front-end</h4>
+                      <p class="parrafo">Desarrollo de un sitio web para Agrícola del Norte S.A., una empresa con sede en Arica, dedicada a la venta local de recursos agrícolas. El enfoque principal del proyecto fue crear una plataforma web dinámica y fácil de usar.</p>
+                    </li>
+                    <div class="postcirculito"><div class="circulito"></div></div>
+                  <li class="li">
+                    <h4 class="titulo">Desarrollador front-end</h4>
+                    <p class="parrafo">Desarrollo de una plataforma de información para Zona Fótica con el propósito de ser expuesta en la feria Aquasur, representando a Zona Fótica como consultora en el campo de la acuicultura.</p></li>
+                      <div class="postcirculito"><div class="circulito"></div></div>
+                  <li class="li">
+                    <h4 class="titulo">Desarrollador Web</h4>
+                    <p class="parrafo">Desarrollar una plataforma de información sobre clubes de adulto mayor en las comunas de
+                      Arica,Camarones y Putre. Ordenar, monitorear y controlar el acceso de información a la plataforma,
+                      velando por el buen uso y control de acceso a esta.</p>
+                  </li>
+                  </ul>
+            
+                    
+                  </div>
+               </div>
+          </div>
+            </div>
+
+    </main>
+</body>
+</html>
