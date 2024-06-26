@@ -125,8 +125,12 @@ border-radius:4rem;
           width:80%;
         }
         #contenido-dinamico{
-          height:inherit ;
-          width: inherit;
+          min-height: 31.25rem;
+          opacity: 0;
+          transition: opacity 0.3s ease; 
+        }
+        #contenido-dinamico.loaded {
+        opacity: 1;
         }
         @media(min-width:375px) and (max-width:767px){
           .fondo{
