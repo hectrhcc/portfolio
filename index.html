@@ -52,12 +52,7 @@ background: linear-gradient(transparent,#261250 );
 border-radius:4rem;
 }
         body{
-            background-image: url(Sinnombre.png);
-            background-repeat: no-repeat;
-	          background-size: cover;
-	          background-attachment:fixed; 
-	          background-position:center ;
-            
+            background-color: #E6E6E6;
             display: flex;
             align-items: center; 
             justify-content: center; 
@@ -73,6 +68,7 @@ border-radius:4rem;
         .foto{
             display: flex;
             justify-content: center;
+            z-index:-1;
         }
         .boton, .fa-chart-line, .fa-home, .fa-briefcase ,.fa-award  ,.fa-envelope{
           transition: all .2s ease-out;
@@ -107,11 +103,17 @@ border-radius:4rem;
             box-shadow: 0 0 6px rgba(0,0,0,.5);
         }
         .perfil{
+            background-image: url(nombre.png);
+            background-repeat: no-repeat;
+	          background-size: cover;
+	          background-attachment:fixed; 
+	          background-position:center ;
             box-shadow: 0 0 6px rgba(0,0,0,0.5);
             border-top-left-radius: 0.7rem;
             border-bottom-left-radius:0.7rem;
             padding-top: 3rem;
             padding-bottom: 3rem;
+            
         }
         .principal{
             box-shadow: 3px 0 3px rgba(0,0,0,1);
@@ -170,13 +172,13 @@ border-radius:4rem;
 <body>
     <div class="fondo flex flex-row justify-center p-8 m-3 max-md:m-0 sm:m-0 ">
         <div class="flex flex-row  max-md:flex-col w-3/4 max-md:w-11/12 sm:w-11/12">
-            <div class="perfil bg-white  p-2  w-1/4 max-md:w-11/12 max-md:block  max-md:mx-auto  sm:w-2/3 lg:w-1/3">
+            <div class="perfil  p-2  w-1/4 max-md:w-11/12 max-md:block  max-md:mx-auto  sm:w-2/3 lg:w-1/3">
                 <div class="foto" ><img src="hhcc.png"     alt="foto-perfil" class="inline w-36 "></div>
                 <div class="text-center font-semibold">
                 <p class="text-lg">Héctor Contreras</p>
                <p class="text-red-600 text-sm">Front-end Developer</p>
             </div>
-               <div class="block mt-2 mb-2 text-center w-full relative  flex-nowrap">
+               <div class="block mt-4 mb-4 text-center w-full relative  flex-nowrap">
                 <a
                 href="https://www.linkedin.com/in/hector-contreras-corvacho/" 
                 target="_blank"> <img src="linkedin-logo-black-circle-15920.png" class="inline w-8 mr-2 boton" >  </a>
@@ -192,7 +194,7 @@ border-radius:4rem;
                   <img src="mensajero.png" class="inline w-8 boton"></a>
                 </a>
               </div>  
-              <p class="cv text-center mb-4 mt-2" >
+              <p class="cv text-center mb-4 mt-4" >
                 <a href="cv.pdf" download class=""><i class="fas fa-download icono-descarga "></i> Descargar cv</a>
                 </p>    
             </div>
