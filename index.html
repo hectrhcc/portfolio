@@ -57,13 +57,12 @@ border-radius:4rem;
             align-items: center; 
             justify-content: center; 
             height:77vh;
-            
+          
         }
         
         .foto{
             display: flex;
             justify-content: center;
-            z-index:-1;
         }
         .boton, .fa-chart-line, .fa-home, .fa-briefcase ,.fa-award  ,.fa-envelope{
           
@@ -125,7 +124,7 @@ border-radius:4rem;
           width:80%;
         }
         #contenido-dinamico{
-          min-height: 31.25rem;
+          max-height:28rem;
           opacity: 0;
           transition: opacity 0.3s ease; 
         }
@@ -134,7 +133,6 @@ border-radius:4rem;
         }
         @media(min-width:375px) and (max-width:767px){
           .fondo{
-         
           width:100%;
         }
           .bienvenida{
@@ -202,10 +200,8 @@ border-radius:4rem;
                 <a href="cv.pdf" download class=""><i class="fas fa-download icono-descarga "></i> Descargar cv</a>
                 </p>    
             </div>
-            <did class="principal w-3/4  max-md:w-full max-md:block sm:w-full">
-                <main >
-                  <div id="contenido-dinamico"></div>
-                </main>
+            <div class="principal w-3/4  max-md:w-full max-md:block sm:w-full">
+             <div id="contenido-dinamico"></div>
             </div>
             <div class="navegar rounded-lg  border ml-4 flex items-center justify-center ">
                 <ul class="nav-list">
