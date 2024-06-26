@@ -13,13 +13,176 @@
     />
     <link rel="icon" type="image/png" href="./icono.png">
     <title>Portafolio Héctor Contreras | Desarrollador Web</title>
-    <style></style>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box; 
+  /*
+   *  font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.projects-section {
+  text-align: center;
+  padding: 7rem 2rem;
+  background: whitesmoke;  
+  color:#261250;
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid #261250;
+  
+}
+
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.bolitas{
+  display: flex;
+  flex-direction: row;
+}
+.bolita{
+  border-radius: 50%;
+  background-color: #FF8096;
+  width: 1rem; /* 10px / 10 = 1rem */
+  height: 1rem; /* 10px / 10 = 1rem */
+  margin-bottom: 0.8rem; /* 5px / 10 = 0.5rem */
+}
+.bolita2{
+  display: inline;
+  border-radius: 50%;
+  background-color: #FF9C7E;
+  width: 1rem;
+  height: 1rem;
+  margin-left:0.5rem;
+}
+.bolita3{
+  display: inline;
+  border-radius: 50%;
+  background-color: #FFBA7F;
+  width:1rem;
+  height:1rem;
+  margin-left:0.5rem;
+}
+.bolita4{
+  display: inline;
+  border-radius: 50%;
+  background-color: rgb(66, 213, 182);
+  width:1rem;
+  height:1rem;
+  margin-left:0.5rem;
+}
+
+
+.project {
+  background:#eeeeee;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  border: 3px solid #6942BB;
+  transition: transform 0.3s ease-out;
+
+}
+
+.project:hover{
+  
+  transform: translateY(-12px);
+}
+
+
+
+.code {
+  color:#45567d;
+  transition: color 0.3s ease-out;
+}
+.skills{
+color: #888;
+font-size: small;
+display: block;
+text-align: center;
+}
+.project:hover .code {
+  color: #ff7f50 ;
+}
+.project:hover .skills {
+  color: #333 ;
+}
+.project2:hover .skills2 {
+  color: #d3d2d2 ;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;    
+} 
+.project-title {
+  
+  padding: 1.5rem 0.3rem 2.6rem  0.3rem ;
+  border-radius: 10px;
+  color:#261250;
+  font-size:2rem; 
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: #361f66; ;
+  border: 0.2rem solid black;
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  transform: scale(1.1)
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+ 
+
+    </style>
     </head>
     <body>
-    
-    <h2 class="projects-section-header">Algunos de mis trabajos</h2>
-  
-<div class="projects-grid" >
+<section class="projects-section">  
+<h2 class="projects-section-header">Algunos de mis trabajos</h2>
+  <div class="projects-grid" >
   <a
   href="https://trackeripaddress.netlify.app/"
   target="_blank"
@@ -179,10 +342,11 @@ class="project project-title jobs-move"
 </div>
 <a
   href="https://github.com/hectrhcc?tab=repositories"
-  class="btn btn-show-all"
+  class="btn btn-show-all text-white"
   target="_blank"
   id="vermas"
   >Más trabajos<i class="fas fa-chevron-right"></i
 ></a>
+</section>
 </body>
 </html>
