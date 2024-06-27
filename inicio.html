@@ -28,6 +28,16 @@ html {
   box-sizing: border-box; 
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+width: 0.7rem; /* Ancho de la barra */
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+::-webkit-scrollbar-thumb {
+background: linear-gradient(transparent,#261250 );
+border-radius:4rem;
+}
         main{
           width: 100%; 
           min-height:28rem;
@@ -36,12 +46,11 @@ html {
         
         .bienvenida{
           color:aliceblue;
-          position: relative;
-          top:12rem;
+          transform: translateY(250%);
         }
         @media(min-width:200px) and (max-width:768px){
           main{
-          min-height:30rem;
+          min-height:15rem;
         }
       }
     </style>
