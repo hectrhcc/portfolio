@@ -10,52 +10,31 @@
 <title>Experiencia</title>
 </head>
 <style>
-
     main{
-        background-color:#fff;
+        background-color:aliceblue;
         color:#000;
         min-height:28rem; /*al 100% le falta un pedazo*/
     }
-    .exp{
-    color:#111;
-    max-width: 640px;
-    margin: 7rem auto 6rem auto;
-    border-bottom: 0.2rem solid var(--main-nav);
-    }
-    .experiencia{
-     display: flex;
-    flex-direction:column;
-    gap:5rem;
-    text-align: center;
-    align-items: center;
-    color:#111;
-    justify-content: center;
-    overflow-y:auto;
-    width: 100%;
-    height:25rem;
-    }
     .contenedor1{
-     min-width:8rem ;
-     position: relative;
-    right:21rem;
-    top:-1rem;
+      width:60%;
+      margin: 0 auto;
+      padding: 1rem 3rem;
     
     }
     .contenedor2{
-    position: relative;
-    left:15rem;
-    top:20.4rem;
-    max-width:90%;
-    
+      padding-top:1.5rem;
+     margin: 0 auto;
+     text-align: center;
     }
+    
     .habilidades{
-     display: flex;
-    justify-content: center;
+      margin: 0 auto;
     padding: 1.5rem;
+    
     
     }
     .habilidad{
-    margin-bottom:1rem;
+      
     }
     .lenguaje{
       font-size:small;
@@ -69,7 +48,8 @@
      font-size: x-small;
     color: #333;
     display: inline;
-    margin-left:5rem;
+    display: flex;
+    justify-content: flex-end;
     }
     .barrita1{
     border: 1px solid cadetblue;
@@ -113,9 +93,8 @@
     text-align: center;
     align-items:start;
     color:#111;
-    width:50%;
-    position: relative;
-    left:18rem;
+    width:80%;
+   
     }
     .tiempo{
     position: relative;
@@ -139,7 +118,7 @@
     visibility: hidden;
     font-size: x-small;
     text-align: justify;
-    width: min(150%, 20rem); /* Ancho mínimo deseado en rem */
+    width: min(150%, 30rem); /* Ancho mínimo deseado en rem */
     position: relative;
     bottom:1rem;
     left:1rem;
@@ -180,7 +159,7 @@
      font-size: x-small;
     color:#565555;
     text-align:justify;  
-    width: min(150%, 20rem); /* Ancho mínimo deseado en rem */
+    width: min(150%, 30rem); /* Ancho mínimo deseado en rem */
     }
     .titulo{
      font-size: small;
@@ -200,33 +179,24 @@
         font-weight: 600;
         
     }
+    h1{
+    font-size:2rem;
+    color:#fff;
+    text-align: center;
+    padding-top: 1rem;
+    text-shadow: 
+    -1px -1px 0 #000,
+    2px -1px 0 #000,
+    -1px 2px 0 #000,
+    2px 2px 0 #000;
+
+}
     @media (min-width:375px) and (max-width:767px){
-        body{
-            width: inherit;
-        }
-        .experiencia{
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        .contenedor1{
-            position: relative;
-            top:18rem;
-            left:-18rem;
-            
-        }
-        .contenedor2{
-            position: relative;
-            left:0rem;
-            /*top:4rem;desaparece*/
-            width:100%;
-            margin-top: 14rem;
-        }
-        .eltitulo{
-            position: relative;
-            left:20rem;
-            top:0rem;
-        }
+       
+       
+       
+        
+       
         }
     @media (min-width:768px){
            
@@ -234,9 +204,8 @@
 </style>
 <body>
     <main>
-            <div class="experiencia">
-            <div class="contenedor2">      
-              
+      <h1>EXPERIENCIA</h1>
+            <div class="contenedor1">      
               <div class="habilidad">
                 <h4 class="habilidades text-black text-center font-semibold">Habilidades de código</h4>
               <span class="lenguaje">HTML/CSS&nbsp;&nbsp;&nbsp;</span><span class="percent">97%</span>
@@ -255,8 +224,7 @@
               <div class="barrita1"><div class="barrita-react"></div></div>
             </div>
             </div>
-            <div class="contenedor1">  
-                <h1 class="eltitulo font-semibold text-xl mx-auto relative right-4">Experiencia</h1>
+            <div class="contenedor2">  
               <div class="forma">
                 <div>
                   <div class="tiempo">
@@ -298,7 +266,7 @@
                   </div>
                </div>
           </div>
-            </div>
+            
           </main>
 </body>
 </html>
