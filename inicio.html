@@ -30,7 +30,7 @@ html {
 }
         main{
           width: 100%; 
-          /*min-height:28rem; al 100% le falta un pedazo*/
+          min-height:28rem;
          background-color: #261250;
        }
         
@@ -39,6 +39,11 @@ html {
           position: relative;
           top:12rem;
         }
+        @media(min-width:200px){
+          main{
+          min-height:100%;
+        }
+      }
     </style>
 </head>
 <body>
