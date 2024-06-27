@@ -28,26 +28,24 @@ html {
   box-sizing: border-box; 
   scroll-behavior: smooth;
 }
-.contenedor-proyecto{
-  width:100%;   
-}   
+main{
+                background-color:#1A183E;   
+}
+ 
 .projects-section {
   text-align: center;
-  padding: 7rem 2rem;
-  background: whitesmoke;  
+  padding: 2rem 2rem;
   color:#261250;
   font-size: 62.5%;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  grid-gap:1.7rem;
   width: 100%;
-  
-  max-width: 1280px;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .bolitas{
@@ -57,32 +55,25 @@ html {
 .bolita{
   border-radius: 50%;
   background-color: #FF8096;
-  width: 1rem; /* 10px / 10 = 1rem */
-  height: 1rem; /* 10px / 10 = 1rem */
+  width:0.7rem;
+  height:0.7rem;
   margin-bottom: 0.8rem; /* 5px / 10 = 0.5rem */
 }
-.bolita2{
-  display: inline;
-  border-radius: 50%;
-  background-color: #FF9C7E;
-  width: 1rem;
-  height: 1rem;
-  margin-left:0.5rem;
-}
+
 .bolita3{
   display: inline;
   border-radius: 50%;
   background-color: #FFBA7F;
-  width:1rem;
-  height:1rem;
+  width:0.7rem;
+  height:0.7rem;
   margin-left:0.5rem;
 }
 .bolita4{
   display: inline;
   border-radius: 50%;
   background-color: rgb(66, 213, 182);
-  width:1rem;
-  height:1rem;
+  width:0.7rem;
+  height:0.7rem;
   margin-left:0.5rem;
 }
 
@@ -92,7 +83,7 @@ html {
   border-radius: 2px;
   border: 3px solid #6942BB;
   transition: transform 0.3s ease-out;
-
+  width:100%;
 }
 .project:hover{ 
   transform: translateY(-12px);
@@ -114,21 +105,18 @@ text-align: center;
 .project:hover .skills {
   color: #333 ;
 }
-.project2:hover .skills2 {
-  color: #d3d2d2 ;
-}
+
 
 .project-image {
-  height: calc(100% - 6.8rem);
+  height: calc(100% - 2rem);
   width: 100%;
   object-fit: cover;    
 } 
 .project-title {
-  
-  padding: 1.5rem 0.3rem 2.6rem  0.3rem ;
+    padding: 1rem 0.1rem 3.3rem 0.1rem;
   border-radius: 10px;
   color:#261250;
-  font-size:2rem; 
+  font-size:small; 
   font-weight: 400;
   line-height: 1.4;
 }
@@ -161,12 +149,23 @@ text-align: center;
   transform: translateX(0);
   transition: transform 0.3s ease-out;
 }
+h1{
+    font-size:2rem;
+    color:#fff;
+    text-align: center;
+    padding-top: 1rem;
+    text-shadow: 
+    -0.5px -0.5px 0 #000,
+    3px -0.5px 0 #000,
+    -0.5px 3px 0 #000,
+    3px 3px 0 #000;
 
+}
     </style>
     </head>
-<main class="contenedor-proyecto">
+<main>
+    <h1>TRABAJOS</h1>
 <section class="projects-section">  
-
   <div class="projects-grid" >
   <a
   href="https://trackeripaddress.netlify.app/"
