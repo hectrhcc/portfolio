@@ -218,7 +218,7 @@ border-radius:4rem;
             top:8rem;
           }
           .perfil{
-  
+            min-width: 100%; 
             box-shadow: 0 -3px 6px rgba(0,0,0,0.5);
             border-top-left-radius: 0.7rem;
             border-top-right-radius: 0.7rem;
@@ -228,7 +228,7 @@ border-radius:4rem;
           }
           
           .principal{
-            max-width:91.7% ;
+            min-width: 100%; 
             margin: 0 auto;
             box-shadow: 0 3px 6px rgba(0,0,0,0.5); 
             border-top-right-radius: 0rem;
@@ -243,11 +243,15 @@ border-radius:4rem;
           top:20%;
           border:1px solid green;
           background-color: transparent;
+          max-width:100%;
           
         }
         .fondo2{
-          min-width:28rem;
-          
+        margin: 0 auto;
+        min-width:120%;
+          display: flex;
+          justify-content: center; 
+          align-items: center;  
           border:3px solid red;
           overflow-x: hidden;
         }
