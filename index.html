@@ -197,19 +197,101 @@ border-radius:4rem;
           position: relative;
           top:5.5rem;
         }
+
+        @media(min-width:375px) and (max-width:389px){
+          .navegar{
+            height: 2.2rem;
+            width:12rem ;
+            margin: 0 auto;
+            position: relative;
+            top:-42.5rem;
+            border: 0;
+            text-shadow: none;
+            background-color: transparent;
+          }
+          .nav-list{
+            display: flex;
+            flex-direction: row;
+          }
+        
+          .bienvenida{
+            top:8rem;
+          }
+          .perfil{
+  
+            box-shadow: 0 -3px 6px rgba(0,0,0,0.5);
+            border-top-left-radius: 0.7rem;
+            border-top-right-radius: 0.7rem;
+            border-bottom-left-radius:0rem ;
+            border-bottom-right-radius:0rem;
+            
+          }
+          
+          .principal{
+            max-width:91.7% ;
+            margin: 0 auto;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.5); 
+            border-top-right-radius: 0rem;
+            border-top-left-radius: 0rem;
+            border-bottom-right-radius: 0.7rem;
+            border-bottom-left-radius: 0.7rem;
+            min-height:18rem;
+          }
+          .fondo{
+          margin: 0 auto;
+          position: relative;
+          top:20%;
+          border:1px solid green;
+          background-color: transparent;
+          
+        }
+        .fondo2{
+          min-width:28rem;
+          
+          border:3px solid red;
+          overflow-x: hidden;
+        }
+        }
+        
+        @media (min-width:390px) and (max-width:767px) {
+          .fondo{
+          margin: 0 auto;
+          position: relative;
+          top:20%;
+          }
+          .fondo2{
+            
+            min-width:29rem;
+            overflow-x: hidden;
+          }
+          .navegar{
+            height: 2.2rem;
+            width:15rem ;
+            
+            position: relative;
+            top:-54rem;
+            
+            background-color: transparent;
+          }
+          .nav-list{
+            display: flex;
+            flex-direction: row;
+            
+          }
+
+        
+        }
         @media (min-width:768px){
         
         
           }
        
-        @media (min-width:1440px){
-          
-        }
+        
     </style>
 </head>
 <body>
     <div class="fondo flex flex-row justify-center p-8 m-3 max-md:m-0 sm:m-0 ">
-        <div class="flex flex-row  max-md:flex-col w-3/4 max-md:w-11/12 sm:w-11/12">
+        <div class="fondo2 flex flex-row  max-md:flex-col w-3/4 max-md:w-11/12 sm:w-11/12">
             <div class="perfil  pt-10  w-1/4 max-md:w-11/12 max-md:block  max-md:mx-auto  sm:w-2/3 lg:w-1/3">
                 <div class="foto" ><img src="hhcc.png"     alt="foto-perfil" class="inline w-36 "></div>
                 <div class="text-center font-semibold">
@@ -240,7 +322,7 @@ border-radius:4rem;
              <div id="contenido-dinamico">
              </div>
             </div>
-            <div class="navegar rounded-lg  border ml-4 flex items-center justify-center ">
+            <div class="navegar rounded-lg  border ml-4 flex items-center justify-center max-md:mx-auto ">
                 <ul class="nav-list">
                     <li>
                       <a href="./inicio.html" class="cargar-contenido" data-mensaje="Inicio" ><i class="fas fa-home w-8 relative left-2 "></i> </a>
