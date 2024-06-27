@@ -164,44 +164,40 @@ border-radius:4rem;
           position: relative;
           left:0.6rem;
         }
-        @media(min-width:375px) and (max-width:767px){
-          body{
-            overflow-y:scroll;
-          }
-          .fondo{
-          width:100%;
-        }
-          .bienvenida{
-            top:8rem;
-          }
-          .perfil{
-  
-            box-shadow: 0 -3px 6px rgba(0,0,0,0.5);
-            border-top-left-radius: 0.7rem;
-            border-top-right-radius: 0.7rem;
-            border-bottom-left-radius:0rem ;
-            border-bottom-right-radius:0rem;
-            
-          }
-          
-          .principal{
-            max-width:91.7% ;
-            margin: 0 auto;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.5); 
-            border-top-right-radius: 0rem;
-            border-top-left-radius: 0rem;
-            border-bottom-right-radius: 0.7rem;
-            border-bottom-left-radius: 0.7rem;
-            min-height:18rem;
-          }
-        }
         .fondo{
           margin: 0 auto;
           position: relative;
           top:5.5rem;
         }
-
+       
+          
         @media(min-width:375px) and (max-width:390px){
+          body{
+            overflow-y:scroll;
+            border:1px solid blue;
+            max-width:100%;
+            max-height:100%;
+          }
+          .fondo{
+          margin: 0 auto;
+          position: relative;
+          top:20%;
+          background-color: transparent;
+          min-width:100%;
+          border:1px solid red;
+          min-height:100%;
+        }
+        .fondo2{
+          border:1px solid red;
+          margin: 0 auto;
+          min-width:120%;
+          min-height:120%;
+          display: flex;
+          justify-content: center; 
+          align-items: center;   
+          
+        }
+       
           .navegar{
             height: 2.2rem;
             width:12rem ;
@@ -223,8 +219,8 @@ border-radius:4rem;
           .perfil{
             min-width: 100%; 
             box-shadow: 0 -3px 6px rgba(0,0,0,0.5);
-            border-top-left-radius: 0.7rem;
-            border-top-right-radius: 0.7rem;
+            border-top-left-radius: 0rem;
+            border-top-right-radius: 0rem;
             border-bottom-left-radius:0rem ;
             border-bottom-right-radius:0rem;
             
@@ -236,26 +232,11 @@ border-radius:4rem;
             box-shadow: 0 3px 6px rgba(0,0,0,0.5); 
             border-top-right-radius: 0rem;
             border-top-left-radius: 0rem;
-            border-bottom-right-radius: 0.7rem;
-            border-bottom-left-radius: 0.7rem;
+            border-bottom-right-radius: 0rem;
+            border-bottom-left-radius: 0rem;
             min-height:18rem;
           }
-          .fondo{
-          margin: 0 auto;
-          position: relative;
-          top:20%;
-          background-color: transparent;
-          max-width:100%;
           
-        }
-        .fondo2{
-        margin: 0 auto;
-        min-width:120%;
-          display: flex;
-          justify-content: center; 
-          align-items: center;   
-          
-        }
         }
         
         @media (min-width:390px) and (max-width:767px) {
