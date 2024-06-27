@@ -11,6 +11,8 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/3.0.1/typeit.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="icon" type="image/png" href="./icono.png">
     <title>Portafolio Héctor Contreras | Desarrollador Web</title>
     <style>
@@ -68,15 +70,37 @@ border-radius:4rem;
             display: flex;
             justify-content: center;
         }
-        .boton, .fa-chart-line, .fa-home, .fa-briefcase ,.fa-award  ,.fa-envelope{
-          
+        .boton, .fa-chart-line, .fa-home, .fa-briefcase ,.fa-award  ,.fa-envelope, .fa-user{
           transition: all .2s ease-out;
         }
-        .boton:hover, .fa-chart-line:hover, .fa-home:hover, .fa-briefcase:hover ,.fa-award:hover  ,.fa-envelope:hover{
+        .boton:hover, .fa-chart-line:hover, .fa-home:hover, .fa-briefcase:hover ,.fa-award:hover  ,.fa-envelope:hover, .fa-user:hover{
           transform: scale(1.2);
-          
         }
-        .cv{
+        .cargar-contenido {
+    position: relative; 
+}
+
+.cargar-contenido::before {
+  content: attr(data-mensaje);
+    position: absolute; 
+    top: calc(100% + -50px);
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: rgba(30, 21, 127, 0.8); 
+    color: #fff;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s ease; 
+    white-space: nowrap; 
+}
+
+.cargar-contenido:hover::before {
+    opacity: 1; /* Mostrar el mensaje al hacer hover */
+}
+
+      .cv{
         margin: 0 auto;
         background-color:#261250;
         border-radius:0.7rem;
@@ -137,7 +161,11 @@ border-radius:4rem;
         #contenido-dinamico.loaded {
         opacity: 1;
         }
-        @media(min-width:375px) and (max-width:1023px){
+        .fa-award, .fa-user{
+          position: relative;
+          left:0.6rem;
+        }
+        @media(min-width:375px) and (max-width:767px){
           .fondo{
           width:100%;
         }
@@ -170,16 +198,20 @@ border-radius:4rem;
           position: relative;
           top:5.5rem;
         }
+        @media (min-width:768px){
+        
+        
+          }
        
         @media (min-width:1440px){
-            
+          
         }
     </style>
 </head>
 <body>
     <div class="fondo flex flex-row justify-center p-8 m-3 max-md:m-0 sm:m-0 ">
         <div class="flex flex-row  max-md:flex-col w-3/4 max-md:w-11/12 sm:w-11/12">
-            <div class="perfil  p-2  w-1/4 max-md:w-11/12 max-md:block  max-md:mx-auto  sm:w-2/3 lg:w-1/3">
+            <div class="perfil  pt-10  w-1/4 max-md:w-11/12 max-md:block  max-md:mx-auto  sm:w-2/3 lg:w-1/3">
                 <div class="foto" ><img src="hhcc.png"     alt="foto-perfil" class="inline w-36 "></div>
                 <div class="text-center font-semibold">
                 <p class="text-lg">Héctor Contreras</p>
@@ -201,7 +233,7 @@ border-radius:4rem;
                   <img src="mensajero.png" class="inline w-8 boton"></a>
                 </a>
               </div>  
-              <p class="cv text-center mb-4 mt-4" >
+              <p class="cv text-center mb-4 mt-6" >
                 <a href="cv.pdf" download class=""><i class="fas fa-download icono-descarga "></i> Descargar cv</a>
                 </p>    
             </div>
@@ -212,20 +244,23 @@ border-radius:4rem;
             <div class="navegar rounded-lg  border ml-4 flex items-center justify-center ">
                 <ul class="nav-list">
                     <li>
-                      <a href="./inicio.html" class="cargar-contenido"><i class="fas fa-home w-8 relative left-2 "></i> </a>
+                      <a href="./inicio.html" class="cargar-contenido" data-mensaje="Inicio" ><i class="fas fa-home w-8 relative left-2 "></i> </a>
                     </li>
                     <li>
-                      <a href="./proyectos.html" class="cargar-contenido"><i class="fas fa-briefcase w-8 relative left-2"></i> </a>
+                      <a href="./hc.html" class="cargar-contenido" data-mensaje="Sobre mi"><i class="fas fa-user w-8 relative "></i></a>
                     </li>
                     <li>
-                      <a href="./certificados.html" class="cargar-contenido"><i class="fas fa-award w-8 relative left-2"></i></a>
+                      <a href="./proyectos.html" class="cargar-contenido" data-mensaje="Trabajos"><i class="fas fa-briefcase w-8 relative left-2"></i> </a>
                     </li>
                     <li>
-                      <a href="./experiencia.html" class="cargar-contenido"> <i class="fas fa-chart-line w-8 relative left-2"></i>
+                      <a href="./certificados.html" class="cargar-contenido" data-mensaje="Certificados"><i class="fas fa-award w-8 relative"></i></a>
+                    </li>
+                    <li>
+                      <a href="./experiencia.html" class="cargar-contenido" data-mensaje="Experiencia"> <i class="fas fa-chart-line w-8 relative left-2"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="./contacto.html" class="cargar-contenido"> <i class="fas fa-envelope w-8 relative left-2"></i>
+                        <a href="./contacto.html" class="cargar-contenido" data-mensaje="Contacto"> <i class="fas fa-envelope w-8 relative left-2"></i>
                           </a>
                       </li>
                   </ul>
