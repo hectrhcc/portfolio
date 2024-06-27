@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Cargar contenido inicial
-    $('#contenido-dinamico').load('inicio.html', function() {
+    $('#contenido-dinamico').load('inicio0.html', function() {
         $(this).addClass('loaded'); // Aplicar clase loaded después de cargar el contenido inicial
     });
     // Manejar clicks en los enlaces
