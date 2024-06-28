@@ -25,7 +25,7 @@ background: linear-gradient(transparent,#261250 );
 border-radius:4rem;
 }
         main{
-          width: 104%; 
+          width: 100%; 
           min-height:28rem; /*al 100% le falta un pedazo*/
          background-color: #1A183E;
        }
@@ -43,6 +43,7 @@ border-radius:4rem;
         @media(min-width:200px) and (max-width:768px){
           main{
           min-height:17rem;
+          width: 104%; 
         }
         .bienvenida{
           color:aliceblue;
@@ -55,7 +56,7 @@ border-radius:4rem;
 <body>
 <main>
     <div class="bienvenida">
-        <h1 class="text-4xl mb-2 text-center mb-8">Desarrollador Web Front-end</h1>
+        <h1 class="text-4xl mb-2 text-center mb-8 max-md:text-2xl">Desarrollador Web Front-end</h1>
         <p class="texto">Como desarrollador frontend, mi objetivo principal es crear sitios web con un diseño responsivo y limpio. En cada proyecto, me esfuerzo por asegurar que las páginas se vean perfectamente en todos los dispositivos y hacer la experiencia lo más amigable posible para el usuario. </p>
       </div>
 </main>
