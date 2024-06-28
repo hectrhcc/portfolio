@@ -151,6 +151,7 @@ border-radius:4rem;
           width:80%;
         }
         #contenido-dinamico{
+          overflow-x:hidden;
           max-height:28rem;
           opacity: 0;
           transition: opacity 0.3s ease; 
@@ -167,7 +168,66 @@ border-radius:4rem;
           position: relative;
           top:5.5rem;
         }
-       
+        @media(min-width:320px) and (max-width:375px){
+
+body{
+  overflow-y:scroll;
+  max-width:100%;
+  max-height:100%;
+  background-color:#1A183E/*espacio final*/
+}
+.fondo{
+margin: 0 auto;
+position: relative;
+top:20%;
+background-color: transparent;
+min-width:100%;
+min-height:150%;
+
+}
+.fondo2{
+margin: 0 auto;
+min-width:120%;
+max-height:120%;
+display: flex;
+justify-content: center; 
+align-items: center;    
+}
+.perfil{
+  min-width: 104%; 
+  min-height:48%;
+  padding:1.5rem 0;
+  box-shadow: 0 -3px 6px rgba(0,0,0,0.5);
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  border-bottom-left-radius:0rem ;
+  border-bottom-right-radius:0rem;
+}
+
+.principal{
+  min-width: 104%; 
+  margin: 0 auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.5); 
+  border-top-right-radius: 0rem;
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+  min-height:14rem;
+
+}
+#contenido-dinamico{
+  min-height:7rem;
+  margin: 0 auto;
+}
+
+.navegar{
+  height:12rem;
+  position: relative;
+  right:3rem;
+  top:9rem;
+} 
+}
+
           
         @media(min-width:375px) and (max-width:390px){
 
