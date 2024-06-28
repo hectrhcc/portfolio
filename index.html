@@ -168,6 +168,16 @@ border-radius:4rem;
           position: relative;
           top:5.5rem;
         }
+
+        @keyframes aparecerDesdeDer {
+        from {
+        transform: translateX(100%); 
+        }   
+        to {
+        transform: translateX(0);
+        }
+      }
+
         @media(min-width:320px) and (max-width:374px){
 html{
   font-size: 50%;
@@ -235,6 +245,7 @@ overflow-x:hidden;
   position: relative;
   right:5rem;
   top:9rem;
+  animation: aparecerDesdeDer 1s forwards;
 } 
 }
 
@@ -296,6 +307,7 @@ overflow-x:hidden;
             position: relative;
             right:3rem;
             top:9rem;
+            animation: aparecerDesdeDer 1s forwards;
           } 
         }
         
@@ -331,7 +343,7 @@ overflow-x:hidden;
             position: relative;
             right:3.5rem;
             top:10.5rem;
-            
+            animation: aparecerDesdeDer 1s forwards;
           }
        
           .perfil, .principal{

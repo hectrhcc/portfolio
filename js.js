@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    //menu
+  
     // Cargar contenido inicial
     $('#contenido-dinamico').load('inicio.html', function() {
         $(this).addClass('loaded'); // Aplicar clase loaded después de cargar el contenido inicial
