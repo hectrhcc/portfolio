@@ -130,11 +130,7 @@ border-radius:4rem;
     font-size: x-small;
     text-align: justify;
     width: min(150%, 30rem); /* Ancho mínimo deseado en rem */
-    position: relative;
-    bottom:1rem;
-    left:1rem;
-    padding-bottom:0.5rem;
-    margin: 0;
+    
     }
     .ul{
      border-left:1px solid #888;
@@ -214,12 +210,29 @@ border-radius:4rem;
         .contenedor2{
           width:80%;
         }
+        .parrafo-oculto{
+          position: relative;
+    bottom:1rem;
+    left:1rem;
+    padding-bottom:0.5rem;
+    margin: 0;
+        }
 }
     @media (min-width:768px) and (max-width:1023px){
       .contenedor1{
           width:90%;
         }
         }
+    @media (min-width:1280px){
+      .temp{
+        position: relative;
+        top:2rem;
+      }
+      .temp2{
+        position: relative;
+        top:4rem;
+      }
+    }
 </style>
 <body>
     <main>
@@ -232,12 +245,12 @@ border-radius:4rem;
               <p class="empresa">Agrícola del Norte S.A</p>
               <p class="parrafo-oculto">Desarrollo de un sitio web para Agrícola del Norte S.A., una empresa con sede en Arica, dedicada a la venta local de recursos agrícolas. El enfoque principal del proyecto fue crear una plataforma web dinámica y fácil de usar.</p>
             </div>
-          <div class="tiempo">
+          <div class="tiempo temp">
             <h4 class="año">2024</h4>
               <p class="empresa">Consultora Zona Fótica</p>
               <p class="parrafo-oculto">Desarrollo de un sitio web de información para Zona Fótica con el propósito de ser expuesta en la feria Aquasur, representando a Zona Fótica como consultora en el campo de la acuicultura.</p>
           </div>
-          <div class="tiempo">
+          <div class="tiempo temp2">
             <h4 class="año">2023</h4>
               <p class="empresa">Fundación Construyendo</p>
               <p class="parrafo-oculto">Desarrollar de un sitio web de información sobre clubes de adulto mayor en las comunas de
