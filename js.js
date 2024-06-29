@@ -1,6 +1,4 @@
 $(document).ready(function() {
-    //menu
-  
     // Cargar contenido inicial
     $('#contenido-dinamico').load('inicio.html', function() {
         $(this).addClass('loaded'); // Aplicar clase loaded después de cargar el contenido inicial
@@ -17,7 +15,4 @@ $(document).ready(function() {
         // Retornar false para evitar que el navegador siga el enlace
         return false;
     });
-    $('#texto').typeIt({
-        speed: 50
- });
 });

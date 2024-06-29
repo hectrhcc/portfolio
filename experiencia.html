@@ -105,18 +105,23 @@ border-radius:4rem;
     align-items:start;
     color:#111;
     width:80%;
+    
+    }
+    .subforma{
+
+      width:30%;
+    }
+    .forma2{
+  
+      width:70%;
+      height:22.5rem;
+    }
    
-    }
-    .tiempo{
-    position: relative;
-    padding:0;
-    margin: 0;
-    }
     .año{
      font-size: small;
     margin-bottom: 1.5rem;
     text-align: right;
-    position: relative;
+    
     }
     .empresa{
      color: #888;
@@ -156,6 +161,9 @@ border-radius:4rem;
     top:0.2rem;
     background-color: #fff;
     }
+    .altura{
+      height:7.5rem;
+    }
     .li{
      padding-left: 2rem;
     position: relative;
@@ -175,17 +183,9 @@ border-radius:4rem;
     position: relative;    
     bottom:0.5rem;
     color:rgb(25, 25, 122);
+    
     }
-    .eltitulo{
-        font-size: x-large;
-        color: #000;
-
-        text-align: center;
-        position:static;
-        top:6rem;
-        font-weight: 600;
-        
-    }
+  
     h1{
     font-size:2rem;
     color:whitesmoke;
@@ -213,24 +213,15 @@ border-radius:4rem;
         .parrafo-oculto{
           position: relative;
         }
-        .temp{
-        position: relative;
-        top:-0.7rem;
-      }
-      .temp2{
-        position: relative;
-        top:-1.2rem;
-      }
+      
 }
 @media(min-width:375px) and (max-width:768px){
-  .temp{
-        position: relative;
-        top:1.4rem;
+  .forma{
+        width:90%;
       }
-      .temp2{
-        position: relative;
-        top:3rem;
-      }
+  .altura{
+    height:9rem;
+  }
     .contenedor2{
       position: relative;
       right:2rem;
@@ -242,8 +233,18 @@ border-radius:4rem;
 }
 
     @media (min-width:768px) and (max-width:1023px){
+      .forma{
+        width: 100%;
+      }
+      .altura{
+        height:14.1rem;
+      }
+      
       .contenedor1{
-          width:90%;
+          width:100%;
+          position: relative;
+          top:0rem;
+          
         }
         .contenedor2{
           
@@ -251,64 +252,34 @@ border-radius:4rem;
           right:2rem;
     }
   }
-  @media (min-width:1024px) and (max-width:1279px){
-    .temp{
-        position: relative;
-        top:4rem;
-        
-      }
-      .temp2{
-        position: relative;
-        top:7.3rem;
-        
-      }
-  }
-      @media (min-width:1280px) and (max-width:1439px){
-      .temp{
-        position: relative;
-        top:4.4rem;
-      }
-      .temp2{
-        position: relative;
-        top:7.3rem;
-      }
-    }
-    @media (min-width:1440px){
-      .temp{
-        position: relative;
-        top:2rem;
-      }
-      .temp2{
-        position: relative;
-        top:4rem;
-      }
-    }
+
+
+  
+
 </style>
 <body>
     <main>
       <h1>EXPERIENCIA</h1>
       <div class="contenedor2">  
+       
         <div class="forma">
-          <div>
-            <div class="tiempo">
+          <div class="subforma">
+            <ul>
+              <li class="altura">
             <h4 class="año">2024</h4>
               <p class="empresa">Agrícola del Norte S.A</p>
-              <p class="parrafo-oculto">Desarrollo de un sitio web para Agrícola del Norte S.A., una empresa con sede en Arica, dedicada a la venta local de recursos agrícolas. El enfoque principal del proyecto fue crear una plataforma web dinámica y fácil de usar.</p>
-            </div>
-          <div class="tiempo temp">
+              </li> 
+           <li class="altura">
             <h4 class="año">2024</h4>
               <p class="empresa">Consultora Zona Fótica</p>
-              <p class="parrafo-oculto">Desarrollo de un sitio web de información para Zona Fótica con el propósito de ser expuesta en la feria Aquasur, representando a Zona Fótica como consultora en el campo de la acuicultura.</p>
-          </div>
-          <div class="tiempo temp2">
+            </li> 
+          <li class="altura">
             <h4 class="año">2023</h4>
               <p class="empresa">Fundación Construyendo</p>
-              <p class="parrafo-oculto">Desarrollar de un sitio web de información sobre clubes de adulto mayor en las comunas de
-                Arica,Camarones y Putre. Ordenar, monitorear y controlar el acceso de información a la plataforma,
-                velando por el buen uso y control de acceso a esta.</p>
-            </div>
+          </li>   
+          </ul>  
           </div>
-        <div>
+        <div class="forma2">
             <ul class="ul">
              <div class="postcirculito"><div class="circulito"></div></div>
               <li class="li"> 
@@ -348,9 +319,7 @@ border-radius:4rem;
               <span class="lenguaje">React.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="percent"> 75%</span>
               <div class="barrita1"><div class="barrita-react"></div></div>
             </div>
-            </div>
-          
-            
+            </div>  
           </main>
 </body>
 </html>
