@@ -5,7 +5,6 @@ module.exports = {
     extend: {
       colors:{
         "Red": "hsl(0, 66%, 54%)",
-        'custom-blue': '#1A183E'
     }
   },
 },
