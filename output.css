@@ -607,8 +607,20 @@ video {
   margin-top: 1.5rem;
 }
 
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .inline {
