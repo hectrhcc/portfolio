@@ -70,6 +70,7 @@ max-height: 2rem;
         .foto{
             display: flex;
             justify-content: center;
+          
         }
         .boton, .fa-chart-line, .fa-home, .fa-briefcase ,.fa-award  ,.fa-envelope, .fa-user{
           transition: all .2s ease-out;
@@ -140,7 +141,7 @@ max-height: 2rem;
             min-height:27rem;
         }
         .principal{
-            box-shadow: 3px 0 3px rgba(0,0,0,1);
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5), 0 -3px 4px rgba(0, 0, 0, 0.3); 
             border-top-right-radius: 0.7rem;
             border-bottom-right-radius:0.7rem ;
             background-color: #1A183E;
@@ -152,10 +153,16 @@ max-height: 2rem;
           overflow-x:hidden;
           max-height:28rem;
           opacity: 0;
-          transition: opacity 0.3s ease; 
+          transition: opacity 0.5s ease-in-out;
         }
         #contenido-dinamico.loaded {
         opacity: 1;
+        }
+        #contenido-dinamico:not(.loaded){
+        opacity: 0;
+        } 
+        #contenido-dinamico.loading {
+        opacity: 0;
         }
         .fa-award, .fa-user{
           position: relative;
@@ -221,7 +228,7 @@ align-items: center;
 overflow-x:hidden;    
 }
 .perfil{
-  min-width: 104%; 
+  min-width: 100%; 
   min-height:48%;
   margin-top:4rem;
   box-shadow: 0 -3px 6px rgba(0,0,0,0.5);
@@ -232,7 +239,7 @@ overflow-x:hidden;
 }
 
 .principal{
-  min-width: 104%; 
+  min-width: 100%; 
   margin: 0 auto;
   box-shadow: 0 3px 6px rgba(0,0,0,0.5); 
   border-top-right-radius: 0rem;

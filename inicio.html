@@ -15,20 +15,6 @@
     <title>Portafolio Héctor Contreras | Desarrollador Web</title>
     <style>
 
-      * {
-  margin: 0;
-  padding: 0;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box; 
-  scroll-behavior: smooth;
-}
 ::-webkit-scrollbar {
 width: 0.7rem; /* Ancho de la barra */
 }
@@ -40,7 +26,7 @@ background: linear-gradient(transparent,#261250 );
 border-radius:4rem;
 }
         main{
-          width: 100%; 
+          width:100%; 
           min-height:28rem;
          background-color: #1A183E;
        }
@@ -52,7 +38,7 @@ border-radius:4rem;
         }
         img{
           width:0.9rem;
-          margin-right: 0.4rem;
+          /*margin-right: 0.4rem; mueve a perfil levemente solo a la foto e iconos*/
         }
         p{
           display: flex;
@@ -76,7 +62,7 @@ border-radius:4rem;
 <main>
     <div class="bienvenida">
         <h1 class="text-4xl mb-2 text-center sm:text-3xl">Héctor Contreras</h1>
-        <p class="mt-2 text-sm text-center" ><img src="coffee-icon.png"> Front-end Developer</p>
+        <p class="mt-2 text-sm text-center" ><img src="coffee-icon.png">&nbsp;&nbsp;Front-end Developer</p>
       </div>
 </main>
 </body>
