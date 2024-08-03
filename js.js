@@ -1,19 +1,30 @@
 $(document).ready(function() {
     // Cargar contenido inicial
     $('#contenido-dinamico').load('inicio.html', function() {
-        $(this).addClass('loaded'); // Aplicar clase loaded después de cargar el contenido inicial
+        $(this).addClass('loaded');
     });
 
     $('.cargar-contenido').click(function(e) {
-        e.preventDefault(); // Evitar comportamiento por defecto del enlace
-        let pagina = $(this).attr('href'); // Obtener el enlace
+        e.preventDefault();
+        let pagina = $(this).attr('href');
 
-        $('#contenido-dinamico').removeClass('loaded').addClass('loading'); 
-        // Cargar la página usando AJAX
-        $('#contenido-dinamico').load(pagina, function() {
-            $(this).removeClass('loading').addClass('loaded'); // Aplicar clase loaded después de cargar el nuevo contenido
-        });
-        // Retornar false para evitar que el navegador siga el enlace
+        // Agregar clase para la animación de salida
+        $('#contenido-dinamico').addClass('fade-out');
+
+        // Esperar a que termine la animación de salida
+        setTimeout(function() {
+            // Cargar la nueva página
+            $('#contenido-dinamico').load(pagina, function() {
+                // Remover clase de salida y agregar clase de entrada
+                $('#contenido-dinamico').removeClass('fade-out').addClass('fade-in');
+
+                // Remover la clase de entrada después de la animación
+                setTimeout(function() {
+                    $('#contenido-dinamico').removeClass('fade-in');
+                }, 500);
+            });
+        }, 500);
+
         return false;
     });
 });

@@ -11,7 +11,6 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
-    
     <link rel="icon" type="image/png" href="./icono.png">
     <title>Portafolio Héctor Contreras | Desarrollador Web</title>
     <style>
@@ -139,6 +138,7 @@ max-height: 2rem;
             padding-bottom: 3rem;
             transition: opacity 0.3s ease; 
             min-height:27rem;
+            
         }
         .principal{
           box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5), 0 -3px 4px rgba(0, 0, 0, 0.3); 
@@ -149,20 +149,35 @@ max-height: 2rem;
             max-width:65%;
             min-height:27rem;
         }
+        @keyframes fadeIn {
+         from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+        }
         #contenido-dinamico{
           overflow-x:hidden;
           max-height:28rem;
           opacity: 0;
+          animation: fadeIn 2s ease-in-out forwards;
           transition: opacity 0.5s ease-in-out;
+          position:relative; 
+          top: 0; 
+          height: 100%; 
+          width: 100%; 
         }
         #contenido-dinamico.loaded {
         opacity: 1;
+        transition: opacity 0.5s ease-in-out;
         }
         #contenido-dinamico:not(.loaded){
         opacity: 0;
         } 
         #contenido-dinamico.loading {
-        opacity: 0;
+        opacity: 0.5;
+        transition: opacity 0.5s ease-in-out;
         }
         .fa-award, .fa-user{
           position: relative;
@@ -441,13 +456,14 @@ overflow-x:hidden;
             </div>
            
             <div class="principal w-3/4  max-md:w-full max-md:h-full max-md:block sm:w-full">
-             <div id="contenido-dinamico">
+             <div id="contenido-dinamico" >
              </div>
             </div>
             <div class="navegar rounded-lg  border ml-4 flex items-center justify-center max-md:mx-auto ">
               <ul class="nav-ul">
                   <li>
-                    <a href="./inicio.html" class="cargar-contenido" data-mensaje="Inicio" ><i class="fas fa-home w-8 relative left-2 "></i> </a>
+                    <a href="./inicio.html" class="cargar-contenido" data-mensaje="Inicio" 
+                   ><i class="fas fa-home w-8 relative left-2 "></i> </a>
                   </li>
                   <li>
                     <a href="./hc.html" class="cargar-contenido" data-mensaje="Sobre mi"><i class="fas fa-user w-8 relative "></i></a>
@@ -474,6 +490,6 @@ overflow-x:hidden;
       
 
     </div>
-    <script src="js.js"></script>
+<script src="js.js"></script>
 </body>
 </html>
