@@ -1,0 +1,411 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap">
+    <link href="./output.css" rel="stylesheet">
+<title>Experiencia</title>
+</head>
+<style>
+  ::-webkit-scrollbar {
+width: 0.7rem; /* Ancho de la barra */
+
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+::-webkit-scrollbar-thumb {
+background: linear-gradient(transparent,#261250 );
+border-radius:4rem;
+
+}
+    main{
+        background-color:whitesmoke;
+        color:#000;
+        min-height:28rem; /*al 100% le falta un pedazo*/
+    }
+    .contenedor1{
+      width:60%;
+      margin: 0 auto;
+      padding: 1rem 3rem;
+    
+    }
+    .contenedor2{
+      padding-top:1.5rem;
+     margin: 0 auto;
+     text-align: center;
+    }
+    
+    .habilidades{
+      margin: 0 auto;
+    padding: 1.5rem;
+    
+    
+    }
+    .habilidad{
+      margin:0.7rem auto ;
+    }
+    .lenguaje{
+      font-size:small;
+    font-weight: bold;
+    color: #111;
+    display: inline;
+    text-align: left;
+    margin-right:10rem;
+    }
+    .percent{
+     font-size: x-small;
+    color: #333;
+    display: inline;
+    display: flex;
+    justify-content: flex-end;
+    }
+    .barrita1{
+    border: 1px solid cadetblue;
+    padding: 0.2rem;
+    border-radius:3rem;
+    width: 100%;
+  
+    }
+    .barrita-html{
+     display: inherit;
+    height: auto;
+    width: 97%;
+    padding:0.12rem ;
+    background-color: rgb(64, 64, 221);
+    }
+    .barrita-js{
+    display: inherit;
+    height: auto;
+    width: 85%;
+    padding:0.12rem ;
+    background-color: rgb(64, 64, 221);
+    }
+    .barrita-tail{
+    display: inherit;
+    height: auto;
+    width:80%;
+    padding:0.12rem ;
+    background-color: rgb(64, 64, 221);
+    }
+    .barrita-react{
+    display: inherit;
+    height: auto;
+    width: 75%;
+    padding:0.17rem ;
+    background-color: rgb(64, 64, 221);
+    }
+    .forma{
+     padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap:1.5rem;
+    text-align: center;
+    align-items:start;
+    color:#111;
+    width:80%;
+    
+    }
+    .subforma{
+
+      width:30%;
+    }
+    .forma2{
+  
+      width:70%;
+      height:22.5rem;
+    }
+   
+    .año{
+     font-size: small;
+    margin-bottom: 1.5rem;
+    text-align: right;
+    
+    }
+    .empresa{
+     color: #888;
+    font-size: x-small;
+    text-align: right;
+    position: relative;
+    bottom: 0.5rem;
+    }
+    .parrafo-oculto{
+    visibility: hidden;
+    font-size: x-small;
+    text-align: justify;
+    width: min(150%, 30rem); /* Ancho mínimo deseado en rem */
+    
+    }
+    .ul{
+     border-left:1px solid #888;
+    margin-inline-start: 1rem;
+    }
+    .postcirculito{
+     background-color: rgb(109, 200, 203);
+    width:1.3rem;
+    height:1.3rem;
+    position: relative;
+    right:0.7rem;
+    top:0rem;
+    border-radius:3rem;
+    }
+    .circulito{
+    border:1px solid blue;
+    padding: 0.3rem;
+    width:0.5rem;
+    height: auto;
+    border-radius:3rem;
+    position: relative;
+    left:0.25rem;
+    top:0.2rem;
+    background-color: #fff;
+    }
+    .altura{
+      height:7.5rem;
+    }
+    .li{
+     padding-left: 2rem;
+    position: relative;
+    bottom:1rem;        
+    padding-bottom: 1rem;
+    }
+    .parrafo{
+     font-size: x-small;
+    color:#565555;
+    text-align:justify;  
+    width: min(150%, 30rem); /* Ancho mínimo deseado en rem */
+    }
+    .titulo{
+     font-size: small;
+    margin-bottom: 1.2rem;
+    text-align: left;
+    position: relative;    
+    bottom:0.5rem;
+    color:rgb(25, 25, 122);
+    
+    }
+  
+    h1{
+    font-size:2rem;
+    color:whitesmoke;
+    text-align: center;
+    padding-top: 1rem;
+    text-shadow: 
+    -1.5px -1.5px 0 #000,
+    1.5px -1.5px 0 #000,
+    -1.5px 1.5px 0 #000,
+    1.5px 1.5px 0 #000;
+
+}
+@media(min-width:320px) and (max-width:375px){
+  /*listo*/
+          main{
+          min-height:17rem;
+          padding-left: 1.5rem;
+          overflow-x:hidden;
+        }
+        .forma{
+        width:90%;
+      }
+  .altura{
+    height:20rem;
+  }
+        .contenedor1{
+          width:80%;
+        }
+        .contenedor2{
+          width:80%;
+        }
+        .parrafo-oculto{
+          position: relative;
+        }
+      
+}
+@media(min-width:375px) and (max-width:390px){
+  /*listo*/
+  .forma{
+        width:90%;
+      }
+  .altura{
+    height:15rem;
+  }
+  .cacho{
+    position: relative;
+    top:-0.5rem;
+  }
+    .contenedor2{
+      position: relative;
+      right:2rem;
+      
+    }
+    .contenedor1{
+      position: relative;
+      right:0.5rem;
+    }
+    .parrafo{
+      min-width: 100%;
+    }
+}
+
+@media (min-width:390px) and (max-width:768px){
+  /*listo*/
+  .forma{
+        width:90%;
+      }
+  .altura{
+    height:9rem;
+  }
+    .contenedor2{
+      position: relative;
+      right:2rem;
+    }
+    .contenedor1{
+      position: relative;
+      top:-3rem;
+      width: 80%;
+    }
+    .parrafo{
+      min-width: 100%;
+    }
+}
+    @media (min-width:768px) and (max-width:1023px){
+      /*listo*/
+      .forma{
+        width: 100%;
+      }
+      .altura{
+        height:14.1rem;
+      }
+      .cacho{
+        position: relative;
+        top:-0.5rem;
+    }
+      
+      .contenedor1{
+          width:100%;
+          position: relative;
+          top:0rem;
+          
+        }
+        .contenedor2{
+          
+          position: relative;
+          right:2rem;
+    }
+  }
+  @media (min-width:1024px){
+    .altura{
+      height: 8.3rem;
+    }
+    .cacho{
+      position: relative;
+      top:-0.5rem;
+    }
+    .contenedor1{
+      position: relative;
+      top:-3.3rem;
+    }
+  }
+  @media (min-width:1280px){
+    /*listo*/
+    .altura{
+      height: 8.2rem;
+    }
+    .cacho{
+      position: relative;
+      top:-0.5rem;
+  }
+  }
+  @media (min-width:1440px){
+    
+    .altura{
+      height: 7.5rem;
+    }
+    .cacho{
+      position: relative;
+      top:0rem;
+  }
+  .contenedor1{
+      position: relative;
+      top:0rem;
+    }
+  }
+  @media (min-width:1600px){
+    /*listo*/
+    .altura{
+      height: 7.15rem;
+    }
+  }
+
+
+
+</style>
+<body>
+    <main>
+      <h1>EXPERIENCIA</h1>
+      <div class="contenedor2">  
+       
+        <div class="forma">
+          <div class="subforma">
+            <ul>
+              <li class="altura">
+            <h4 class="año">2024</h4>
+              <p class="empresa">Agrícola del Norte S.A</p>
+              </li> 
+           <li class="altura">
+            <h4 class="año">2024</h4>
+              <p class="empresa">Consultora Zona Fótica</p>
+            </li> 
+          <li class="altura cacho">
+            <h4 class="año">2023</h4>
+              <p class="empresa">Fundación Construyendo</p>
+          </li>   
+          </ul>  
+          </div>
+        <div class="forma2">
+            <ul class="ul">
+             <div class="postcirculito"><div class="circulito"></div></div>
+              <li class="li"> 
+              <h4 class="titulo">Desarrollador front-end</h4>
+                <p class="parrafo">Desarrollo de un sitio web para Agrícola del Norte S.A., una empresa con sede en Arica, dedicada a la venta local de recursos agrícolas. El enfoque principal del proyecto fue crear una plataforma web dinámica y fácil de usar.</p>
+              </li>
+              <div class="postcirculito"><div class="circulito"></div></div>
+            <li class="li">
+              <h4 class="titulo">Desarrollador front-end</h4>
+              <p class="parrafo">Desarrollo de un sitio web de información para Zona Fótica con el propósito de ser expuesta en la feria Aquasur, representando a Zona Fótica como consultora en el campo de la acuicultura.</p></li>
+                <div class="postcirculito"><div class="circulito"></div></div>
+            <li class="li">
+              <h4 class="titulo">Desarrollador Web</h4>
+              <p class="parrafo">Desarrollar de un sitio web de información sobre clubes de adulto mayor en las comunas de
+                Arica,Camarones y Putre. Ordenar, monitorear y controlar el acceso de información a la plataforma,
+                velando por el buen uso y control de acceso a esta.</p>
+            </li>
+            </ul>     
+            </div>
+         </div>
+    </div>
+            <div class="contenedor1">      
+              <div class="habilidad">
+                <h4 class="habilidades text-black text-center font-semibold">Habilidades de código</h4>
+              <span class="lenguaje">HTML/CSS&nbsp;&nbsp;&nbsp;</span><span class="percent">97%</span>
+              <div class="barrita1"><div class="barrita-html"></div></div>
+            </div>
+            <div class="habilidad">
+              <span class="lenguaje">Javascript&nbsp;&nbsp;&nbsp;</span><span class="percent">85%</span>
+              <div class="barrita1"><div class="barrita-js"></div></div>
+            </div>
+            <div class="habilidad">
+              <span class="lenguaje">TailwindCSS</span><span class="percent">80%</span>
+              <div class="barrita1"><div class="barrita-tail"></div></div>
+            </div>
+            <div class="habilidad">
+              <span class="lenguaje">React.js&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="percent"> 75%</span>
+              <div class="barrita1"><div class="barrita-react"></div></div>
+            </div>
+            </div>  
+          </main>
+</body>
+</html>

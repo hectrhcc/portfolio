@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="./icono.png">
+    <title>Portafolio Héctor Contreras | Desarrollador Web</title>
+    <style>
+
+::-webkit-scrollbar {
+width: 0.7rem; /* Ancho de la barra */
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+::-webkit-scrollbar-thumb {
+background: linear-gradient(transparent,#261250 );
+border-radius:4rem;
+}
+        main{
+          width:100%; 
+          min-height:28rem;
+         background-color: #1A183E;
+       }
+        
+        .bienvenida{
+          color:aliceblue;
+          position: relative;
+          top: 11rem ;
+        }
+        img{
+          width:0.9rem;
+          /*margin-right: 0.4rem; mueve a perfil levemente solo a la foto e iconos*/
+        }
+        p{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        @media(min-width:200px) and (max-width:768px){
+          main{
+          min-height:17rem;
+          
+        }
+        .bienvenida{
+          position: relative;
+          top:6.5rem ;
+        }
+      }
+     
+    </style>
+</head>
+<body>
+<main>
+    <div class="bienvenida">
+        <h1 class="text-4xl mb-2 text-center sm:text-3xl">Héctor Contreras</h1>
+        <p class="mt-2 text-sm text-center" ><img src="coffee-icon.png">&nbsp;&nbsp;Front-end Developer</p>
+      </div>
+</main>
+</body>
+</html>

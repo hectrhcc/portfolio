@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="./icono.png">
+    <title>Portafolio Héctor Contreras | Desarrollador Web</title>
+    <style>
+
+::-webkit-scrollbar {
+width: 0.7rem; /* Ancho de la barra */
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+::-webkit-scrollbar-thumb {
+background: linear-gradient(transparent,#261250 );
+border-radius:4rem;
+}
+        main{
+          width: 100%; 
+          min-height:28rem; /*al 100% le falta un pedazo*/
+         background-color: #261250;
+       }
+        .bienvenida{
+          color:aliceblue;
+          position: relative;
+          top:8rem;
+        }
+        .texto{
+          margin:0 auto;
+          text-align: justify;
+          width:70%;
+        }
+ 
+        @media(min-width:200px) and (max-width:768px){
+          main{
+          min-height:28rem;
+          width: 100%; 
+        }
+        .bienvenida{
+          
+          color:aliceblue;
+          position: relative;
+          top:3rem;
+        }
+      }
+      @media(min-width:768px) and (max-width:1000px){
+        .bienvenida{
+          position: relative;
+          top:2.5rem;
+        }
+        .medium{
+          font-size: large;
+          font-weight: 500;
+        }
+      }
+    </style>
+</head>
+<body>
+<main>
+    <div class="bienvenida">
+        <h1 class="text-4xl mb-2 text-center mb-8 max-md:text-2xl medium">Desarrollador Web</h1>
+        <p class="texto sm:text-base sm:text-justify">Como desarrollador front-end, mi objetivo principal es crear sitios web con un diseño responsivo y limpio. En cada proyecto, me esfuerzo por asegurar que las páginas se vean perfectamente en todos los dispositivos y hacer la experiencia lo más amigable posible para el usuario. </p>
+      </div>
+</main>
+</body>
+</html>

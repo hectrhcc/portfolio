@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="./icono.png">
+    <title>Portafolio Héctor Contreras | Desarrollador Web</title>
+    <style>
+      ::-webkit-scrollbar {
+width: 0.7rem; /* Ancho de la barra */
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+::-webkit-scrollbar-thumb {
+background: linear-gradient(transparent,#261250 );
+border-radius:4rem;
+}
+main{
+  width: 100%; 
+  min-height:28rem; /*al 100% le falta un pedazo*/
+  background-color:#1A183E;
+}
+.herramientas{
+  padding-top:2rem;
+color: aliceblue;
+text-align: center;
+
+}
+.marquee {
+margin: 2rem auto;
+min-height:3rem;
+overflow: hidden;
+box-sizing: border-box;
+padding-bottom:0.5rem;
+width:60%;
+-webkit-mask: linear-gradient(
+  90deg,
+  transparent,
+  white 20%,
+  white 80%,
+  transparent
+);
+mask: linear-gradient(90deg, transparent, white 20%, rgb(255, 255, 255) 80%, transparent);
+background: linear-gradient(130.08deg, #242252 0%, #1A183E 100%);
+}
+.marquee--inner {
+display: inline-block;
+width:50%;
+position: relative;
+animation: marquee 40s linear infinite;
+}
+
+.marquee--inner:hover {
+animation-play-state: paused;
+}
+
+@keyframes marquee {
+0% { left: 0; }
+100% { left: -100%; }
+}
+
+.orb {
+width: flex;
+height:auto;
+display: flex;
+margin: 0 24.7px;
+float: left;
+transition: all .2s ease-out;
+filter: grayscale(1);
+}
+
+.orb:hover {
+transform: scale(1.2);
+opacity: .5;
+cursor: pointer;
+filter: none;
+}
+.span1{
+display: flex;
+flex-direction: row;
+position: relative;
+top:0.5rem;
+
+}
+.span1 img{
+margin-right:5rem;
+width:25%;
+}
+  .contact-details {
+    color: #d3caca;
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 1rem 0.8rem;
+    border-radius: 2px;
+  }
+  
+  .btn-show-all {
+    font-size: 2rem;
+    background: #361f66; ;
+    transition: background 0.3s ease-out;
+  }
+  
+  .btn-show-all:hover {
+    background: var(--main-red);
+  }
+  
+  .btn-show-all:hover > i {
+    transform: translateX(2px);
+  }
+  
+  .btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+     
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap; 
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--main-gray);
+  }
+  
+  .contact-section-header > h2 {
+    font-size:3rem;
+  }
+  .fin{
+    
+    margin-top: 1rem;
+    text-align: center;
+    font-size: small;
+  }
+  .enlace:hover{
+      text-decoration: underline;
+  }
+  @media(min-width:200px) and (max-width:768px){
+          main{
+          min-height:17rem;
+          
+        }
+        .fin{
+          font-size: 60%;
+        }
+      }
+    </style>
+</head>
+<body>
+<main>
+<section class="herramientas">
+    <div class="contact-section-header">
+        <h3 class="text-white lg:text-5xl mb-2 max-md:text-4xl sm:text-2xl">Trabajemos juntos...</h3>
+        <p class="text-white">¿Cómo tomas tu café?</p>
+      </div>
+      <div class="w-3/4 mx-auto">
+        <a class="btn contact-details" 
+        href="https://www.linkedin.com/in/hector-contreras-corvacho/" 
+        target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a
+          id="profile-link"
+          href="https://github.com/hectrhcc"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        <a href="mailto:hcontrerascorvacho@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Enviar un correo</a
+        >
+        <a href="https://wa.me/56967689934"  class="btn contact-details"><i class="fas fa-mobile-alt"></i> Chat</a>
+      </div>  
+    <div class="marquee">
+      <div class="marquee--inner">
+        <span class="span1">
+          <a href="https://html.spec.whatwg.org/multipage/" target="_blank"><img src="html.png" class="orb"/></a>
+          <a href="https://www.w3.org/Style/CSS/"  target="_blank"><img src="css.png" class="orb"/></a>
+          <a href="https://262.ecma-international.org/"  target="_blank"><img src="js.png" class="orb"/></a>
+          <a href="https://jquery.com/"  target="_blank"><img src="jquery.png" class="orb"/></a>
+          <a href="https://es.react.dev/" target="_blank"><img src="react.png" class="orb"/></a>
+          <a href="https://nextjs.org/"  target="_blank"><img src="nextjs.png" class="orb"/></a>
+          <a href="https://tailwindcss.com/"  target="_blank"><img src="tailwind.png" class="orb"/></a>
+          <a href="https://git-scm.com/"  target="_blank"><img src="git.png" class="orb"/></a>
+          <a href="https://code.visualstudio.com/"  target="_blank"><img src="vscode.png" class="orb"/></a>
+          <a href="https://vitejs.dev/"  target="_blank"><img src="vite.png" class="orb"/></a>
+        </span>
+      </div>
+    </div>
+    <p class="w-full mb-4">
+        **Todos los proyectos y detalles de contacto proporcionados son reales.
+      </p>
+      <hr/>
+      <p class="fin">  &copy; 2024,
+        <a href="https://github.com/hectrhcc" target="_blank" class="enlace">Héctor Contreras</a>
+         Powered by HTML, Tailwind CSS, & jQuery
+      </p> 
+  </section> 
+</main>
+</body>
+</html>

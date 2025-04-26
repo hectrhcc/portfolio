@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="./icono.png">
+    <title>Portafolio Héctor Contreras | Desarrollador Web</title>
+    <style>
+        :root {
+  --main-white: #f0f0f0;
+  --main-nav: #261250;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #39424E;
+  --main-purple: #6942BB;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box; 
+  /*
+   *  font size = 16px, 1rem = 16px, 100% = 16px
+   * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+  */
+  scroll-behavior: smooth;
+  min-height: 100%;
+  
+}
+/* Estilo para la barra de desplazamiento en navegadores webkit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+width: 0.7rem; /* Ancho de la barra */
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+::-webkit-scrollbar-thumb {
+background: linear-gradient(transparent,#261250 );
+border-radius:4rem;
+max-height: 2rem;
+}
+        body{
+            background-color: #E6E6E6;
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            height:100vh;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            min-height: 100%;
+            
+        }
+        
+        .foto{
+            display: flex;
+            justify-content: center;
+          
+        }
+        .boton, .fa-chart-line, .fa-home, .fa-briefcase ,.fa-award  ,.fa-envelope, .fa-user{
+          transition: all .2s ease-out;
+        }
+        .boton:hover, .fa-chart-line:hover, .fa-home:hover, .fa-briefcase:hover ,.fa-award:hover  ,.fa-envelope:hover, .fa-user:hover{
+          transform: scale(1.2);
+        }
+        .cargar-contenido {
+    position: relative; 
+}
+
+.cargar-contenido::before {
+  content: attr(data-mensaje);
+    position: absolute; 
+    top: calc(100% + -50px);
+    left: 50%; 
+    transform: translateX(-50%);
+    background-color: rgba(30, 21, 127, 0.8); 
+    color: #fff;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s ease; 
+    white-space: nowrap; 
+}
+
+.cargar-contenido:hover::before {
+    opacity: 1; /* Mostrar el mensaje al hacer hover */
+}
+
+      .cv{
+        margin: 2rem auto;
+        background-color:#261250;
+        border-radius:0.7rem;
+        font-size:small;
+        width: 8.5rem;
+        padding: 0.5rem 0.5rem;
+        border:0.172rem solid black;
+        transition: all .2s ease-out;
+        color: #fff;
+        }
+
+        .cv:hover{
+        background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+        border:0.17rem solid black;
+        transform: scale(1.1);
+        }
+        .navegar{
+            background-color: #fff;
+            height: 10rem;
+            position: relative;
+            top:5rem;
+            box-shadow: 0 0 6px rgba(0,0,0,.5);
+        }
+        .perfil{
+            background-image: url(nombre.png);
+            background-repeat: no-repeat;
+	          background-size: cover;
+	          background-attachment:fixed; 
+	          background-position:center ;
+            box-shadow: 0 0 6px rgba(0,0,0,0.5);
+            border-top-left-radius: 0.7rem;
+            border-bottom-left-radius:0.7rem;
+            /*padding-top: 3rem;
+            padding-bottom: 3rem; provoca un movimiento*/
+            min-height:27rem;
+            
+        }
+        .principal{
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5), 0 -3px 4px rgba(0, 0, 0, 0.3); 
+            border-top-right-radius: 0.7rem;
+            border-bottom-right-radius:0.7rem ;
+            background-color: #1A183E;
+            overflow-y:auto;
+            max-width:65%;
+            min-height:27rem;
+        }
+        @keyframes fadeIn {
+         from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+        }
+        #contenido-dinamico{
+          overflow-x:hidden;
+          max-height:28rem;
+          opacity: 0;
+          animation: fadeIn 2s ease-in-out forwards;
+          transition: opacity 1s ease-in-out;
+          position:relative; 
+          top: 0; 
+          height: 100%; 
+          width: 100%; 
+        }
+        #contenido-dinamico.loaded {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+        }
+        #contenido-dinamico:not(.loaded){
+        opacity: 0;
+        } 
+        #contenido-dinamico.loading {
+        opacity: 0.5;
+        transition: opacity 0.5s ease-in-out;
+        }
+        .fa-award, .fa-user{
+          position: relative;
+          left:0.6rem;
+        }
+        .fondo{
+          margin: 0 auto;
+          position: relative;
+          bottom:0.1rem;
+          width:80%;
+        }
+
+        @keyframes aparecerDesdeAr {
+        from {
+        transform: translateY(-100%); 
+        }   
+        to {
+        transform: translateY(0);
+        }
+      }
+
+     .front{
+      font-weight:600;
+      color: #2f146b;
+     }
+     .end{
+      font-size: smaller;
+     }
+
+        @media(min-width:320px) and (max-width:374px){
+html{
+  font-size: 51%;
+  
+}
+.cv{
+  font-size: 50%;
+}
+body{
+  overflow-y:scroll;
+  overflow-x:hidden;
+  max-width:100%;
+  max-height:100%;
+  background-color:#1A183E/*espacio final*/
+}
+.fondo{
+margin: 0 auto;
+position: relative;
+top:20%;
+background-color: transparent;
+min-width:100%;
+min-height:150%;
+overflow-y:hidden;
+overflow-x:hidden;
+
+}
+.fondo2{
+margin:0 auto;
+min-width:120%;
+max-height:120%;
+display: flex;
+justify-content: center; 
+align-items: center;
+overflow-x:hidden;    
+}
+.perfil{
+  min-width: 100%; 
+  min-height:48%;
+  margin-top:4rem;
+  box-shadow: 0 -3px 6px rgba(0,0,0,0.5);
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  border-bottom-left-radius:0rem ;
+  border-bottom-right-radius:0rem;
+}
+
+.principal{
+  min-width: 100%; 
+  margin: 0 auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.5); 
+  border-top-right-radius: 0rem;
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+  min-height:14rem;
+  overflow-x:hidden;
+}
+#contenido-dinamico{
+  min-height:7rem;
+  margin: 0 auto;
+  overflow-x:hidden;
+}
+
+.navegar{
+            width:12.5rem;
+            height: 2.2rem;
+            position: absolute;
+            top:5.4rem;
+            animation: aparecerDesdeAr 2s forwards;
+          } 
+          .nav-ul {
+        display: flex;
+        flex-direction: row;
+          }
+}
+
+          
+        @media(min-width:375px) and (max-width:390px){
+          body{
+            overflow-y:scroll;
+            max-width:100%;
+            max-height:100%;
+            background-color:#1A183E/*espacio final*/
+          }
+          .fondo{
+          margin: 0 auto;
+          position: relative;
+          top:20%;
+          background-color: transparent;
+          min-width:100%;
+          min-height:150%;
+          
+        }
+        .fondo2{
+          margin: 0 auto;
+          min-width:120%;
+          max-height:120%;
+          display: flex;
+          justify-content: center; 
+          align-items: center;    
+        }
+        .perfil{
+            min-width: 104%; 
+            min-height:48%;
+            
+            
+            box-shadow: 0 -3px 6px rgba(0,0,0,0.5);
+            border-top-left-radius: 0rem;
+            border-top-right-radius: 0rem;
+            border-bottom-left-radius:0rem ;
+            border-bottom-right-radius:0rem;
+          }
+          
+          .principal{
+            min-width: 104%; 
+            margin: 0 auto;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.5); 
+            border-top-right-radius: 0rem;
+            border-top-left-radius: 0rem;
+            border-bottom-right-radius: 0rem;
+            border-bottom-left-radius: 0rem;
+            min-height:14rem;
+
+          }
+          #contenido-dinamico{
+            min-height:7rem;
+            margin: 0 auto;
+          }
+       
+          .navegar{
+            width:12.5rem;
+            height: 2.2rem;
+            position: absolute;
+            top:3rem;
+            animation: aparecerDesdeAr 2s forwards;
+          } 
+          .nav-ul {
+        display: flex;
+        flex-direction: row;
+          }
+          .foto{
+            width: 7rem;
+            position: relative;
+            top:1rem;
+            margin:0 auto;
+          }
+          .presentacion , .links ,.cv{
+            position: relative;
+            top:1rem;
+          }
+        }
+        
+        @media (min-width:390px) and (max-width:767px) {
+
+          body{
+            overflow-y:scroll;
+            max-width:100%;
+            max-height:100%;
+            background-color: #1A183E/*espacio final*/
+          }
+          .fondo{
+          margin: 0 auto;
+          position: relative;
+          top:20%;
+          background-color: transparent;
+          min-width:100%;
+          min-height:100%;
+          overflow-x: hidden;
+        }
+        .fondo2{
+          margin: 0 auto;
+          min-width:120%;
+          min-height:120%;
+          display: flex;
+          justify-content: center; 
+          align-items: center;   
+          
+        }
+       
+          .navegar{
+            height: 11rem;
+            position: relative;
+            right:3.5rem;
+            top:10.5rem;
+            animation: aparecerDesdeDer 2s forwards;
+          }
+       
+          .perfil, .principal{
+            border-top-right-radius: 0rem;
+            border-top-left-radius: 0rem;
+            border-bottom-right-radius: 0rem;
+            border-bottom-left-radius: 0rem;
+          }
+          .perfil{
+            min-width: 104.5%; 
+            min-height: 48%;
+            
+          }
+          .principal{
+            min-width: 108%; 
+          }
+          .navegar{
+            width:12.5rem;
+            height: 2.2rem;
+            position: absolute;
+            top:1.2rem;
+            left:5rem;
+            animation: aparecerDesdeAr 2s forwards;
+          } 
+          .nav-ul {
+        display: flex;
+        flex-direction: row;
+          }
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <div class="fondo flex flex-row justify-center p-8 m-3 max-md:m-0 sm:m-0 ">
+        <div class="fondo2 flex flex-row  max-md:flex-col w-3/4 max-md:w-11/12 sm:w-full lg:w-10/12">
+            <div class="perfil  pt-10  w-1/4 max-md:w-11/12 max-md:block  max-md:mx-auto  sm:w-2/3 lg:w-1/3">
+                <div class="foto" ><img src="hhcc.png"     alt="foto-perfil" class="inline w-32 "></div>
+                <div class="presentacion text-center font-semibold mt-4">
+                <p class="text-lg text-black "><span class="front ">Héctor</span>&nbsp;<span class="font-semibold ">Contreras</span></p>
+               <p class="end text-black"><span class="font-semibold">Front-end</span>&nbsp;<span class="front">Developer</span></p>
+            </div>
+               <div class="links block mt-4 mb-4 text-center w-full relative  flex-nowrap">
+                <a
+                href="https://www.linkedin.com/in/hector-contreras-corvacho/" 
+                target="_blank" rel="nofollow noopener noreferrer"> <img src="linkedin-logo-black-circle-15920.png" class="inline w-6 mr-2 boton" >  </a>
+                <a  
+                  href="https://github.com/hectrhcc"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  > <img src="github-round-border.png" class="inline w-6 mr-2 boton"></a></a>
+                <a href="mailto:hcontrerascorvacho@gmail.com"  > 
+                  <img src="email.png" class="inline w-6 mr-2 boton"></a> </a
+                >
+                <a href="https://wa.me/56967689934"  > 
+                  <img src="mensajero.png" class="inline w-6 boton"></a>
+                </a>
+              </div>  
+              <p class="cv text-center " >
+                <a href="cv.pdf" download class=""><i class="fas fa-download icono-descarga "></i> Descargar cv</a>
+                </p>    
+            </div>
+           
+            <div class="principal w-3/4  max-md:w-full max-md:h-full max-md:block sm:w-full">
+             <div id="contenido-dinamico" >
+             </div>
+            </div>
+            <div class="navegar rounded-lg  border ml-4 flex items-center justify-center max-md:mx-auto ">
+              <ul class="nav-ul">
+                  <li>
+                    <a href="./inicio.html" class="cargar-contenido" data-mensaje="Inicio" 
+                   ><i class="fas fa-home w-8 relative left-2 "></i> </a>
+                  </li>
+                  <li>
+                    <a href="./hc.html" class="cargar-contenido" data-mensaje="Sobre mi"><i class="fas fa-user w-8 relative "></i></a>
+                  </li>
+                  <li>
+                    <a href="./proyectos.html" class="cargar-contenido" data-mensaje="Trabajos"><i class="fas fa-briefcase w-8 relative left-2"></i> </a>
+                  </li>
+                  <li>
+                    <a href="./certificados.html" class="cargar-contenido" data-mensaje="Certificados"><i class="fas fa-award w-8 relative"></i></a>
+                  </li>
+                  <li>
+                    <a href="./experiencia.html" class="cargar-contenido" data-mensaje="Experiencia"> <i class="fas fa-chart-line w-8 relative left-2"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="./contacto.html" class="cargar-contenido" data-mensaje="Contacto"> <i class="fas fa-envelope w-8 relative left-2"></i>
+                        </a>
+                    </li>
+                </ul>
+          </div>  
+            
+        </div>      
+        
+      
+
+    </div>
+<script src="js.js"></script>
+</body>
+</html>

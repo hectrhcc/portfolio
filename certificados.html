@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="./icono.png">
+    <title>Portafolio Héctor Contreras | Desarrollador Web</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box; 
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+width: 0.7rem; /* Ancho de la barra */
+height: 2rem;
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+::-webkit-scrollbar-thumb {
+background: linear-gradient(transparent,#261250 );
+border-radius:4rem;
+}
+            main{
+                background-color:#1A183E;   
+            }
+            .certification-section {
+text-align: center;
+padding: 2rem 2rem;
+font-size: 62.5%;
+}
+
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 3fr));
+  grid-gap:1rem;
+  width:100%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+
+.project2 {
+  background:#3e2476;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  border: 3px solid #111;
+  width:99%;
+  max-height:100%;
+  transition: transform 0.3s ease-out;
+}
+
+.project2:hover{
+  background-color:#6942BB;
+  transform: translateY(-12px); 
+}
+
+.project-title2{
+font-size:small;
+padding: 1rem 0.1rem 0.5rem 0.1rem;
+border-radius: 10px;
+color:beige;
+}
+
+.code2{
+color: #45567d;
+transition: color 0.3s ease-out;
+}
+
+.project2:hover .project-title2{
+  font-weight: 500;
+}
+.project2:hover .code2 {
+color: #ff7f50;
+}
+.project2:hover .skills2 {
+  color: #d3d2d2 ;
+}
+
+.project-image {
+  height: calc(100% - 3rem);
+  width: 100%;
+  object-fit: cover;    
+} 
+
+.skills2{
+color: #888;
+font-size: xx-small;
+display: block;
+text-align: center;
+}
+.code2{
+color:#45567d;
+transition: color 0.3s ease-out;
+}
+h1{
+    font-size:2rem;
+    color:#fff;
+    text-align: center;
+    padding-top: 1rem;
+    text-shadow: 
+    -0.5px -0.5px 0 #000,
+    3px -0.5px 0 #000,
+    -0.5px 3px 0 #000,
+    3px 3px 0 #000;
+
+}
+@media(min-width:200px) and (max-width:768px){
+          main{
+          min-height:17rem;
+          
+        }
+        .project-title2{
+          font-size:58%;
+        }
+}
+    </style>
+</head>
+<body>
+<main>
+    <h1>CERTIFICADOS</h1>
+<section  class="certification-section">
+<div class="projects-grid" >
+  <a
+href="https://www.hackerrank.com/certificates/e82ca41552dd"
+target="_blank"
+rel="nofollow noopener noreferrer"
+class="project2 project-title2"
+>
+<img
+class="project-image"
+src="frontend.png"
+alt="certificado Front-end Developer (React)"
+/>
+<p class="project-title2">
+<span class="code2">&lt;</span>
+Front-end Dev. React
+<span class="code2">&#47;&gt;</span>
+<span class="skills2">HackerRank</span>
+</p>
+</a>
+<a
+href="https://www.hackerrank.com/certificates/dcc36aae08ff"
+target="_blank"
+rel="nofollow noopener noreferrer"
+class="project2 project-title2"
+>
+<img
+class="project-image"
+src="cert9.png"
+alt="Certificado Javascript nivel Intermedio"
+/>
+<p class="project-title2">
+<span class="code2">&lt;</span>
+Javascript Intermedio
+<span class="code2">&#47;&gt;</span>
+<span class="skills2">HackerRank</span>
+</p>
+</a>
+<a
+href="https://www.scrumstudy.com/certification/verify?type=SFC&number=1034444"
+target="_blank"
+rel="nofollow noopener noreferrer"
+class="project2 project-title2"
+>
+<img
+class="project-image"
+src="Scrumcert.png"
+alt="Certificado de Scrum Fundamentals  Certified 4th Edition"
+/>
+<p class="project-title2">
+<span class="code2">&lt;</span>
+Scrum Fundamentals
+<span class="code2">&#47;&gt;</span>
+<span class="skills2">Scrumstudy</span>
+</p>
+</a>
+  <a
+  href="https://www.hackerrank.com/certificates/34db0b59c080"
+  target="_blank"
+  rel="nofollow noopener noreferrer"
+  class="project2 project-title2"
+>
+  <img
+    class="project-image"
+    src="cert0.png"
+    alt="certificado react basic"
+  />
+  <p class="project-title2">
+    <span class="code2">&lt;</span>
+     React 
+    <span class="code2">&#47;&gt;</span>
+    <span class="skills2">HackerRank</span>
+  </p>
+</a>
+<a
+href="https://www.udemy.com/certificate/UC-24c03b93-890d-4821-9fad-e31adda9d6ae/"
+target="_blank"
+rel="nofollow noopener noreferrer"
+class="project2 project-title2"
+>
+<img
+  class="project-image"
+  src="cert3.png"
+  alt="certificado de React"
+/>
+<p class="project-title2">
+  <span class="code2">&lt;</span>
+  React
+  <span class="code2">&#47;&gt;</span>
+  <span class="skills2">Udemy</span>
+</p>
+</a>
+<a
+href="https://www.freecodecamp.org/espanol/certification/hectrhcc/front-end-development-libraries"
+target="_blank"
+rel="nofollow noopener noreferrer"
+class="project2 project-title2"
+>
+<img
+class="project-image"
+src="cert8.png"
+alt="certificado Librerías de desarrollo Front-end"
+/>
+<p class="project-title2">
+<span class="code2">&lt;</span>
+Liberías de desarrollo
+<span class="code2">&#47;&gt;</span>
+<span class="skills2">FreeCodeCamp</span>
+</p>
+</a>
+<a
+href="https://www.freecodecamp.org/espanol/certification/hectrhcc/responsive-web-design"
+target="_blank"
+rel="nofollow noopener noreferrer"
+class="project2 project-title2"
+>
+<img
+class="project-image"
+src="cert2.png"
+alt="certificado responsive design"
+/>
+<p class="project-title2">
+<span class="code2">&lt;</span>
+ Responsive Design
+<span class="code2">&#47;&gt;</span>
+<span class="skills2">FreeCodeCamp</span>
+</p>
+</a>
+<a
+href="https://www.hackerrank.com/certificates/9002cdc6a3e2"
+target="_blank"
+rel="nofollow noopener noreferrer"
+class="project2 project-title2"
+>
+<img
+  class="project-image"
+  src="cert7.png"
+  alt="certificado de Javascript nivel básico"
+/>
+<p class="project-title2">
+  <span class="code2">&lt;</span>
+  Javascript Básico
+  <span class="code2">&#47;&gt;</span>
+  <span class="skills2">HackerRank</span>
+</p>
+</a>
+<a
+href="https://drive.google.com/file/d/1McWOlKuN6Knamvpas8TKP7A4n6K3oZMI/view?usp=sharing"
+target="_blank"
+rel="nofollow noopener noreferrer"
+class="project2 project-title2"
+>
+<img
+class="project-image"
+src="cert10.png"
+alt="Certificado de presencia en el curso Scrum Fundamentals  Certified 4th Edition"
+/>
+<p class="project-title2">
+<span class="code2">&lt;</span>
+Scrum
+<span class="code2">&#47;&gt;</span>
+<span class="skills2">soylíder.net</span>
+</p>
+</a>
+  </div>
+</section>
+</main>
+</body>
+</html>

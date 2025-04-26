@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="./icono.png">
+    <title>Portafolio Héctor Contreras | Desarrollador Web</title>
+    <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box; 
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+width: 0.7rem; /* Ancho de la barra */
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1; /* Color de fondo de la barra de desplazamiento */
+}
+::-webkit-scrollbar-thumb {
+background: linear-gradient(transparent,#261250 );
+border-radius:4rem;
+height:2rem;
+}
+main{
+                background-color:#1A183E;   
+}
+ 
+.projects-section {
+  text-align: center;
+  padding: 2rem 2rem;
+  color:#261250;
+  font-size: 62.5%;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  grid-gap:1.7rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.bolitas{
+  display: flex;
+  flex-direction: row;
+}
+.bolita{
+  border-radius: 50%;
+  background-color: #FF8096;
+  width:0.7rem;
+  height:0.7rem;
+  margin-bottom: 0.8rem; /* 5px / 10 = 0.5rem */
+}
+
+.bolita3{
+  display: inline;
+  border-radius: 50%;
+  background-color: #FFBA7F;
+  width:0.7rem;
+  height:0.7rem;
+  margin-left:0.5rem;
+}
+.bolita4{
+  display: inline;
+  border-radius: 50%;
+  background-color: rgb(66, 213, 182);
+  width:0.7rem;
+  height:0.7rem;
+  margin-left:0.5rem;
+}
+
+.project {
+  background:#eeeeee;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  border: 3px solid #6942BB;
+  transition: transform 0.3s ease-out;
+  width:100%;
+  
+}
+.project:hover{ 
+  transform: translateY(-12px);
+  
+}
+
+.code {
+  color:#45567d;
+  transition: color 0.3s ease-out;
+}
+.skills{
+color: #888;
+font-size: small;
+display: block;
+text-align: center;
+}
+.project:hover .project-title{
+    font-weight: 400;
+}
+.project:hover .code {
+  color: #ff7f50 ;
+  
+}
+.project:hover .skills {
+  color: #333 ;
+}
+
+
+.project-image {
+  height: calc(100% -7.5rem);
+  width: 100%;
+
+  object-fit: cover;    
+} 
+.project-title {
+    padding: 1rem 0.1rem 0.5rem 0.1rem;
+  border-radius: 10px;
+  color:#261250;
+  font-size:medium; 
+  font-weight: 400;
+  line-height: 1.4;
+  
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.btn-show-all {
+  font-size: 1rem;
+  background: #361f66; ;
+  border: 0.2rem solid black;
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  transform: scale(1.1)
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+h1{
+    font-size:2rem;
+    color:#fff;
+    text-align: center;
+    padding-top: 1rem;
+    text-shadow: 
+    -0.5px -0.5px 0 #000,
+    3px -0.5px 0 #000,
+    -0.5px 3px 0 #000,
+    3px 3px 0 #000;
+
+}
+.perro{
+  
+  background-color: #eeeeee;
+  margin: 0 auto;
+}
+
+@media(min-width:200px) and (max-width:768px){
+          main{
+          min-height:17rem;
+          width: 100%;
+          
+        }
+        .project-title{
+          font-size: 60%;
+          line-height: 1.3;
+        }
+        .skills{
+          font-size:50%;
+        }
+}
+
+@media(min-width:1600px) {
+       
+        .project-title{
+          font-size:small;
+          line-height: 1.3;
+        }
+        
+}
+
+    </style>
+    </head>
+<main>
+    <h1>TRABAJOS</h1>
+<section class="projects-section">  
+  <div class="projects-grid" >
+    <a
+    href="https://www.zonafotica.cl/"
+    target="_blank"
+    rel="nofollow noopener noreferrer"
+    class="project project-title jobs-move"
+  >
+  <div class="bolitas"><div class="bolita"><br/></div>
+  <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
+    <img
+      class="project-image"
+      src="zonafotica.png"
+      alt="Sitio oficial de la consultora Zona Fótica"
+    />
+    <p class="project-title">
+      <span class="code">&lt;</span>
+      Zona Fótica 
+      <span class="code">&#47;&gt;</span>
+      <span class="skills">Vanilla JS &#9702; Responsive Design</span>
+    </p>
+  </a>
+  <a href="https://www.agricoladelnorte.cl/" target="_blank" rel="nofollow noopener noreferrer" class="project project-title jobs-move" ">
+    <div class="bolitas"><div class="bolita"><br/></div>
+    <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>  
+    <img class="project-image" src="agricola2.png"   alt="Sitio Agricola del Norte S.A." >
+      <p class="project-title" >
+          <span class="code">&lt;</span>
+          Agrícola del Norte
+          <span class="code">&#47;&gt;</span>
+          <span class="skills"> TailwindCSS  &#9702; jQuery  </span>
+      </p>
+  </a>
+    <a
+    href="https://trackeripaddress.netlify.app/"
+    target="_blank"
+    rel="nofollow noopener noreferrer"
+    class="project project-title jobs-move"
+  >
+  <div class="bolitas"><div class="bolita"><br/></div>
+  <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
+    <img
+      class="project-image"
+      src="trackerip.png"
+      alt="Sitio oficial de la consultora Zona Fótica"
+    />
+    <p class="project-title">
+      <span class="code">&lt;</span>
+      Tracker IP
+      <span class="code">&#47;&gt;</span>
+      <span class="skills">ReactJS &#9702; TailwindCSS &#9702; Leaftlet</span>
+    </p>
+  </a>
+  <a
+    href="https://portalde-mascotas.vercel.app/"
+    target="_blank"
+    rel="nofollow noopener noreferrer"
+    class="project project-title jobs-move"
+  >
+  <div class="bolitas"><div class="bolita"><br/></div>
+  <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
+    <img
+      class="project-image perro"
+      src="perro.png"
+      alt="proyecto portal de mascotas"
+    />
+    <p class="project-title">
+      <span class="code">&lt;</span>
+      Portal Mascotas 
+      <span class="code">&#47;&gt;</span>
+      <span class="skills">ReactJS  &#9702; Wouter  &#9702; Firebase</span>
+    </p>
+  </a> 
+
+ 
+  <a
+  href="https://markdown-previewer-dusky-three.vercel.app/ "
+  target="_blank"
+  rel="nofollow noopener noreferrer"
+  class="project project-title jobs-move"
+>
+<div class="bolitas"><div class="bolita"><br/></div>
+<div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
+  <img
+    class="project-image"
+    src="markdown.png"
+    alt="projecto previsualizador de lenguaje de marcado"
+  />
+  <p class="project-title">
+    <span class="code">&lt;</span>
+    Markdown Previewer
+    <span class="code">&#47;&gt;</span>
+    <span class="skills">ReactJS  &#9702; Marked.js   &#9702; Vite </span>
+  </p>
+</a>
+<a
+href="https://proyecto-inzpirate.vercel.app/"
+target="_blank"
+rel="nofollow noopener noreferrer"
+class="project project-title jobs-move"
+>
+<div class="bolitas"><div class="bolita"><br/></div>
+<div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
+<img
+  class="project-image"
+  src="inzp.png"
+  alt="projecto Inzpirate de la fundacion Construyendo servidores para usted "
+/>
+<p class="project-title">
+  <span class="code">&lt;</span>
+  Proyecto Inzpirate
+  <span class="code">&#47;&gt;</span>
+  <span class="skills"> CSS &#9702; JS  &#9702; Responsive Design</span>
+</p>
+</a>
+<a
+href="https://todo-app-kappa-sage.vercel.app/"
+target="_blank"
+rel="nofollow noopener noreferrer"
+class="project project-title jobs-move"
+>
+<div class="bolitas"><div class="bolita"><br/></div>
+<div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
+<img
+  class="project-image"
+  src="todo.png"
+  alt="desafio de Frontend Mentor"
+/>
+<p class="project-title">
+  <span class="code">&lt;</span>
+  Todo App
+  <span class="code">&#47;&gt;</span>
+  <span class="skills"> ReactJS &#9702; TailwindCSS &#9702; Responsive </span>
+</p>
+</a>
+  <a
+  href="https://camarografos.vercel.app/"
+  target="_blank"
+  rel="nofollow noopener noreferrer"
+  class="project project-title jobs-move"
+>
+<div class="bolitas"><div class="bolita"><br/></div>
+<div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
+  <img
+    class="project-image"
+    src="camara.jpg"
+    alt="Página camarógrafos 2024 EDD"
+  />
+  <p class="project-title">
+    <span class="code">&lt;</span>
+    Camarógrafos EDD
+    <span class="code">&#47;&gt;</span>
+    <span class="skills">  ReactJS   &#9702; Wouter  &#9702; Responsive</span>
+  </p>
+</a>
+<a
+href="https://mobile-first-dashboard.vercel.app/"
+target="_blank"
+rel="nofollow noopener noreferrer"
+class="project project-title jobs-move"
+>
+<div class="bolitas"><div class="bolita"><br/></div>
+<div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
+<img
+  class="project-image"
+  src="dashboard.png"
+  alt="proyecto tablero de control"
+/>
+<p class="project-title">
+  <span class="code">&lt;</span>
+  Dashboard 
+  <span class="code">&#47;&gt;</span>
+  <span class="skills">ReactJS &#9702; Vite  &#9702; Responsive</span>
+</p>
+</a>
+<a href="https://base-apparel-coming-soon-vert.vercel.app/" target="_blank" rel="nofollow noopener noreferrer" class="project project-title jobs-move" >
+  <div class="bolitas"><div class="bolita"><br/></div>
+  <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>  
+  <img class="project-image" src="she.jpg" alt="Base apparel" >
+    <p class="project-title" >
+        <span class="code">&lt;</span>
+        Base Apparel
+        <span class="code">&#47;&gt;</span>
+        <span class="skills">TailWind  &#9702; JS   &#9702; Responsive Design</span>
+    </p>
+</a>
+
+<a
+    href="https://aricamascotas.netlify.app/"
+    target="_blank"
+    rel="nofollow noopener noreferrer"
+    class="project project-title jobs-move"
+  >
+  <div class="bolitas"><div class="bolita"><br/></div>
+  <div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
+    <img
+      class="project-image"
+      src="mascotas.png"
+      alt="projecto portal de mascotas"
+    />
+    <p class="project-title">
+      <span class="code">&lt;</span>
+      Otro Portal Mascotas 
+      <span class="code">&#47;&gt;</span>
+      <span class="skills">HTML  &#9702; CSS  &#9702; Javascript ES6</span>
+    </p>
+  </a> 
+
+  <a
+  href="https://los-nueve-talentos.vercel.app/ "
+  target="_blank"
+  rel="nofollow noopener noreferrer"
+  class="project project-title jobs-move"
+>
+<div class="bolitas"><div class="bolita"><br/></div><div class="bolita2"><br/></div>
+<div class="bolita3"><br/></div><div class="bolita4"><br/></div></div>
+  <img
+    class="project-image"
+    src="bosque.png"
+    alt="Videojuego Los Nueve talentos"
+  />
+  <p class="project-title">
+    <span class="code">&lt;</span>
+    Videojuego 
+    <span class="code">&#47;&gt;</span>
+    <span class="skills">jQuery  &#9702; Responsive Design</span>
+  </p>
+</a>
+</div>
+<a
+  href="https://github.com/hectrhcc?tab=repositories"
+  class="btn btn-show-all text-white"
+  target="_blank"
+  rel="nofollow noopener noreferrer"
+  id="vermas"
+  >Más trabajos<i class="fas fa-chevron-right"></i
+></a>
+</section>
+</main>
+</body>
+</html>
